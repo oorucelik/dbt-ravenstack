@@ -1226,3 +1226,547 @@ LINE 1: DESCRIBE "ravenstack"."main_marts"."fct_subscriptions"
 09:32:51.836264 [info ]: Finished analyzing [  0.11s] (16 nodes, 0 skipped, 1 errors)
 09:32:51.839793 [info ]: Cached model count updated: 11 models (accurate)
 09:32:51.906432 [info ]: Loading profiles.yml
+==================== 2026-03-14T10:56:07.864866Z | 8d68a275-a903-413a-aa16-45712eed2955 ====================
+10:56:07.864929 [info ]: Starting dbt LSP server
+10:56:07.864958 [info ]: Connecting to LSP client on port 8000
+10:56:07.866731 [info ]: Successfully connected to LSP client
+10:56:07.866747 [info ]: Creating LSP service...
+10:56:07.906791 [info ]: Creating LSP server...
+10:56:07.906823 [info ]: Starting LSP server...
+10:56:07.957407 [info ]: Started loading project
+10:56:07.961286 [info ]: Loading profiles.yml
+10:56:07.965112 [info ]: Loading packages.yml
+10:56:07.965236 [debug]:    Started loading packages
+10:56:07.973743 [debug]:     Loaded [  0.01s] packages
+10:56:07.974647 [info ]: Started parsing
+10:56:08.001230 [info ]: Finished loading project [  0.04s]
+10:56:08.007382 [debug]: Finished parsing models\marts\_marts_models.yml [  0.00s]
+10:56:08.013244 [debug]: Finished parsing models\marts\dim_account.sql [  0.00s]
+10:56:08.018214 [debug]: Finished parsing models\marts\dim_date.sql [  0.01s]
+10:56:08.019122 [debug]: Finished parsing models\marts\dim_plan.sql [  0.00s]
+10:56:08.019969 [debug]: Finished parsing models\marts\fct_churn.sql [  0.00s]
+10:56:08.020780 [debug]: Finished parsing models\marts\fct_feature_usage.sql [  0.00s]
+10:56:08.021569 [debug]: Finished parsing models\marts\fct_subscriptions.sql [  0.00s]
+10:56:08.022172 [debug]: Finished parsing models\staging\stg_accounts.sql [  0.00s]
+10:56:08.022785 [debug]: Finished parsing models\staging\stg_churn_events.sql [  0.00s]
+10:56:08.023258 [debug]: Finished parsing models\staging\stg_feature_usage.sql [  0.00s]
+10:56:08.023725 [debug]: Finished parsing models\staging\stg_subscriptions.sql [  0.00s]
+10:56:08.031385 [debug]: Finished parsing models\staging\stg_support_tickets.sql [  0.01s]
+10:56:08.037015 [debug]: Finished parsing target\generic_tests\unique_dim_account_account_key.sql [  0.00s]
+10:56:08.037570 [debug]: Finished parsing target\generic_tests\not_null_dim_account_account_key.sql [  0.00s]
+10:56:08.037990 [debug]: Finished parsing target\generic_tests\unique_dim_date_date_key.sql [  0.00s]
+10:56:08.038489 [debug]: Finished parsing target\generic_tests\not_null_dim_date_date_key.sql [  0.00s]
+10:56:08.039010 [debug]: Finished parsing target\generic_tests\unique_dim_plan_plan_key.sql [  0.00s]
+10:56:08.039416 [debug]: Finished parsing target\generic_tests\not_null_dim_plan_plan_key.sql [  0.00s]
+10:56:08.039802 [debug]: Finished parsing target\generic_tests\unique_fct_churn_churn_key.sql [  0.00s]
+10:56:08.040158 [debug]: Finished parsing target\generic_tests\not_null_fct_churn_churn_key.sql [  0.00s]
+10:56:08.040493 [debug]: Finished parsing target\generic_tests\unique_fct_feature_usage_usage_key.sql [  0.00s]
+10:56:08.040900 [debug]: Finished parsing target\generic_tests\not_null_fct_feature_usage_usage_key.sql [  0.00s]
+10:56:08.041263 [debug]: Finished parsing target\generic_tests\unique_fct_subscriptions_subscription_key.sql [  0.00s]
+10:56:08.044485 [debug]: Finished parsing target\generic_tests\not_null_fct_subscriptions_subscription_key.sql [  0.00s]
+10:56:08.045043 [info ]: Finished parsing [  0.07s]
+10:56:08.045569 [info ]: Cached model count updated: 11 models (estimate)
+10:56:08.045580 [info ]: Cached model count updated: 11 models (accurate)
+10:56:08.045660 [info ]: Started scheduling
+10:56:08.045838 [info ]: Finished scheduling [  0.00s]
+10:56:08.045880 [info ]: Started scheduling
+10:56:08.045985 [info ]: Finished scheduling [  0.00s]
+10:56:08.046641 [info ]: Started deferring state
+10:56:08.046659 [info ]: Finished deferring state [  0.00s]
+10:56:08.047417 [info ]: Started downloading schemas
+10:56:08.047471 [debug]:    Started downloading relations
+10:56:08.047508 [debug]:   Finished [  0.00s] downloading relations
+10:56:08.047521 [info ]: Finished downloading schemas [  0.00s]
+10:56:08.195103 [info ]: Started building task graph
+10:56:08.195332 [info ]: Finished building task graph [  0.00s]
+10:56:08.195628 [info ]: Started rendering (16 nodes)
+10:56:08.195674 [info ]: Started seed main_raw.ravenstack_feature_usage
+10:56:08.195710 [debug]: Started rendering seed main_raw.ravenstack_feature_usage
+10:56:08.195753 [info ]: Started seed main_raw.ravenstack_subscriptions
+10:56:08.195763 [debug]: Started rendering seed main_raw.ravenstack_subscriptions
+10:56:08.195784 [info ]: Started model main_marts.dim_date
+10:56:08.195792 [debug]: Started rendering model main_marts.dim_date
+10:56:08.195800 [info ]: Started seed main_raw.ravenstack_support_tickets
+10:56:08.195805 [debug]: Started rendering seed main_raw.ravenstack_support_tickets
+10:56:08.195819 [info ]: Started seed main_raw.ravenstack_churn_events
+10:56:08.195824 [debug]: Started rendering seed main_raw.ravenstack_churn_events
+10:56:08.195831 [info ]: Started seed main_raw.ravenstack_accounts
+10:56:08.195835 [debug]: Started rendering seed main_raw.ravenstack_accounts
+10:56:08.204189 [debug]: Finished rendering [  0.01s] seed main_raw.ravenstack_churn_events [success]
+10:56:08.204261 [info ]: Started analyzing (16 nodes)
+10:56:08.204282 [debug]: Started analyzing seed main_raw.ravenstack_churn_events
+10:56:08.204303 [debug]: Finished rendering [  0.01s] seed main_raw.ravenstack_accounts [success]
+10:56:08.204320 [debug]: Started analyzing seed main_raw.ravenstack_accounts
+10:56:08.204412 [info ]:  Succeeded [  0.01s] seed  main_raw.ravenstack_churn_events (table)
+10:56:08.204442 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_churn_events [success]
+10:56:08.204460 [info ]: Started model main_staging.stg_churn_events
+10:56:08.204469 [debug]: Started rendering model main_staging.stg_churn_events
+10:56:08.204481 [info ]:  Succeeded [  0.01s] seed  main_raw.ravenstack_accounts (table)
+10:56:08.204490 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_accounts [success]
+10:56:08.204497 [info ]: Started model main_staging.stg_accounts
+10:56:08.204502 [debug]: Started rendering model main_staging.stg_accounts
+10:56:08.205425 [debug]: Finished rendering [  0.01s] seed main_raw.ravenstack_support_tickets [success]
+10:56:08.205456 [debug]: Started analyzing seed main_raw.ravenstack_support_tickets
+10:56:08.205486 [info ]:  Succeeded [  0.01s] seed  main_raw.ravenstack_support_tickets (table)
+10:56:08.205497 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_support_tickets [success]
+10:56:08.205508 [info ]: Started model main_staging.stg_support_tickets
+10:56:08.205514 [debug]: Started rendering model main_staging.stg_support_tickets
+10:56:08.206829 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_churn_events at target\.lsp\compiled\models\staging\stg_churn_events.sql
+10:56:08.206914 [debug]: Finished rendering [  0.00s] model main_staging.stg_churn_events [success]
+10:56:08.206935 [debug]: Started analyzing model main_staging.stg_churn_events
+10:56:08.207330 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_accounts at target\.lsp\compiled\models\staging\stg_accounts.sql
+10:56:08.207375 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_support_tickets at target\.lsp\compiled\models\staging\stg_support_tickets.sql
+10:56:08.207390 [debug]: Started analyzing model main_staging.stg_accounts
+10:56:08.207411 [debug]: Started analyzing model main_staging.stg_support_tickets
+10:56:08.207416 [debug]: Finished rendering [  0.00s] model main_staging.stg_support_tickets [success]
+10:56:08.207437 [debug]: Finished rendering [  0.00s] model main_staging.stg_accounts [success]
+10:56:08.220232 [debug]: Query executed on node model.dbt_ravenstack.dim_date:
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "dbt_ravenstack", "target_name": "dev"} */
+select 
+        (date_diff('day', cast('2023-01-01' as timestamp)::timestamp, cast('2025-01-01' as timestamp)::timestamp ))
+10:56:08.222840 [debug]: Finished rendering [  0.03s] seed main_raw.ravenstack_subscriptions [success]
+10:56:08.222877 [debug]: Started analyzing seed main_raw.ravenstack_subscriptions
+10:56:08.222905 [info ]:  Succeeded [  0.03s] seed  main_raw.ravenstack_subscriptions (table)
+10:56:08.222917 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_subscriptions [success]
+10:56:08.222926 [info ]: Started model main_staging.stg_subscriptions
+10:56:08.222932 [debug]: Started rendering model main_staging.stg_subscriptions
+10:56:08.224838 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_subscriptions at target\.lsp\compiled\models\staging\stg_subscriptions.sql
+10:56:08.224919 [debug]: Started analyzing model main_staging.stg_subscriptions
+10:56:08.224972 [debug]: Finished rendering [  0.00s] model main_staging.stg_subscriptions [success]
+10:56:08.233935 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_date at target\.lsp\compiled\models\marts\dim_date.sql
+10:56:08.234142 [debug]: Finished rendering [  0.04s] model main_marts.dim_date [success]
+10:56:08.234186 [debug]: Started analyzing model main_marts.dim_date
+10:56:08.235551 [info ]:  Succeeded [  0.01s] model main_staging.stg_subscriptions (view)
+10:56:08.235577 [debug]: Finished analyzing [  0.01s] model main_staging.stg_subscriptions [success]
+10:56:08.235597 [info ]: Started model main_marts.dim_plan
+10:56:08.235609 [debug]: Started rendering model main_marts.dim_plan
+10:56:08.235626 [info ]:  Succeeded [  0.03s] model main_staging.stg_churn_events (view)
+10:56:08.235636 [debug]: Finished analyzing [  0.03s] model main_staging.stg_churn_events [success]
+10:56:08.235648 [info ]:  Succeeded [  0.03s] model main_staging.stg_support_tickets (view)
+10:56:08.235657 [debug]: Finished analyzing [  0.03s] model main_staging.stg_support_tickets [success]
+10:56:08.235665 [info ]:  Succeeded [  0.03s] model main_staging.stg_accounts (view)
+10:56:08.235670 [debug]: Finished analyzing [  0.03s] model main_staging.stg_accounts [success]
+10:56:08.235677 [info ]: Started model main_marts.dim_account
+10:56:08.235683 [debug]: Started rendering model main_marts.dim_account
+10:56:08.238743 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_plan at target\.lsp\compiled\models\marts\dim_plan.sql
+10:56:08.238865 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+10:56:08.238889 [debug]: Finished rendering [  0.00s] model main_marts.dim_plan [success]
+10:56:08.238906 [debug]: Started analyzing model main_marts.dim_plan
+10:56:08.238951 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+10:56:08.238974 [debug]: Started analyzing model main_marts.dim_account
+10:56:08.263145 [info ]:  Succeeded [  0.03s] model main_marts.dim_plan (table)
+10:56:08.263174 [debug]: Finished analyzing [  0.02s] model main_marts.dim_plan [success]
+10:56:08.275309 [info ]:  Succeeded [  0.04s] model main_marts.dim_account (table)
+10:56:08.275338 [debug]: Finished analyzing [  0.04s] model main_marts.dim_account [success]
+10:56:08.275360 [info ]: Started model main_marts.fct_churn
+10:56:08.275369 [debug]: Started rendering model main_marts.fct_churn
+10:56:08.275387 [info ]: Started model main_marts.fct_subscriptions
+10:56:08.275392 [debug]: Started rendering model main_marts.fct_subscriptions
+10:56:08.275720 [debug]: Finished rendering [  0.08s] seed main_raw.ravenstack_feature_usage [success]
+10:56:08.275763 [debug]: Started analyzing seed main_raw.ravenstack_feature_usage
+10:56:08.275787 [info ]:  Succeeded [  0.08s] seed  main_raw.ravenstack_feature_usage (table)
+10:56:08.275799 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_feature_usage [success]
+10:56:08.275813 [info ]: Started model main_staging.stg_feature_usage
+10:56:08.275824 [debug]: Started rendering model main_staging.stg_feature_usage
+10:56:08.277283 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_feature_usage at target\.lsp\compiled\models\staging\stg_feature_usage.sql
+10:56:08.277345 [debug]: Started analyzing model main_staging.stg_feature_usage
+10:56:08.277425 [debug]: Finished rendering [  0.00s] model main_staging.stg_feature_usage [success]
+10:56:08.278298 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+10:56:08.278362 [debug]: Started analyzing model main_marts.fct_subscriptions
+10:56:08.278358 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+10:56:08.278379 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+10:56:08.278447 [debug]: Started analyzing model main_marts.fct_churn
+10:56:08.278456 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+10:56:08.279789 [info ]:  Succeeded [  0.00s] model main_staging.stg_feature_usage (view)
+10:56:08.279990 [debug]: Finished analyzing [  0.00s] model main_staging.stg_feature_usage [success]
+10:56:08.291446 [info ]:  Succeeded [  0.01s] model main_marts.fct_churn (table)
+10:56:08.291476 [debug]: Finished analyzing [  0.01s] model main_marts.fct_churn [success]
+10:56:08.307792 [info ]:  Succeeded [  0.03s] model main_marts.fct_subscriptions (table)
+10:56:08.307823 [debug]: Finished analyzing [  0.03s] model main_marts.fct_subscriptions [success]
+10:56:08.307853 [info ]: Started model main_marts.fct_feature_usage
+10:56:08.307863 [debug]: Started rendering model main_marts.fct_feature_usage
+10:56:08.310591 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+10:56:08.310705 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+10:56:08.310728 [info ]: Finished rendering [  0.12s] (16 nodes, 0 skipped, 0 errors)
+10:56:08.310760 [debug]: Started analyzing model main_marts.fct_feature_usage
+10:56:08.319276 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+10:56:08.319314 [debug]: Finished analyzing [  0.01s] model main_marts.fct_feature_usage [success]
+10:56:08.367804 [error]: dbt0209: No function dayname
+  --> models\marts\dim_date.sql:2:5
+10:56:08.367935 [info ]:     Failed [  0.17s] model main_marts.dim_date (table)
+10:56:08.367994 [debug]: Finished analyzing [  0.13s] model main_marts.dim_date [error]
+10:56:08.368009 [info ]: Finished analyzing [  0.16s] (16 nodes, 0 skipped, 1 errors)
+10:56:08.371590 [info ]: Cached model count updated: 11 models (accurate)
+10:56:08.373549 [info ]: Loading profiles.yml
+12:24:27.562305 [info ]: Started loading project
+12:24:27.563053 [info ]: Loading profiles.yml
+12:24:27.578788 [info ]: Started parsing
+12:24:27.596099 [info ]: Finished loading project [  0.03s]
+12:24:27.599435 [debug]: Finished parsing models\staging\stg_accounts.sql [  0.00s]
+12:24:27.601537 [info ]: Finished parsing [  0.02s]
+12:24:27.606221 [info ]: Cached model count updated: 11 models (estimate)
+12:24:27.606233 [info ]: Cached model count updated: 11 models (accurate)
+12:24:27.606412 [info ]: Started scheduling
+12:24:27.608442 [info ]: Finished scheduling [  0.00s]
+12:24:27.608576 [debug]: Incremental compilation - 5 nodes selected: {"model.dbt_ravenstack.dim_account", "model.dbt_ravenstack.fct_churn", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_accounts"}
+12:24:27.609939 [info ]: Started deferring state
+12:24:27.609956 [info ]: Finished deferring state [  0.00s]
+12:24:27.610298 [info ]: Started downloading schemas
+12:24:27.610743 [debug]:    Started downloading relations
+12:24:27.610768 [debug]:   Finished [  0.00s] downloading relations
+12:24:27.610782 [info ]: Finished downloading schemas [  0.00s]
+12:24:27.772507 [info ]: Started building task graph
+12:24:27.772617 [info ]: Finished building task graph [  0.00s]
+12:24:27.772978 [info ]: Started rendering (5 nodes)
+12:24:27.772997 [info ]: Started model main_staging.stg_accounts
+12:24:27.773006 [debug]: Started rendering model main_staging.stg_accounts
+12:24:27.774719 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_accounts at target\.lsp\compiled\models\staging\stg_accounts.sql
+12:24:27.774773 [info ]: Started analyzing (5 nodes)
+12:24:27.774774 [debug]: Finished rendering [  0.00s] model main_staging.stg_accounts [success]
+12:24:27.774784 [debug]: Started analyzing model main_staging.stg_accounts
+12:24:27.777031 [info ]:  Succeeded [  0.00s] model main_staging.stg_accounts (view)
+12:24:27.777050 [debug]: Finished analyzing [  0.00s] model main_staging.stg_accounts [success]
+12:24:27.777069 [info ]: Started model main_marts.dim_account
+12:24:27.777078 [debug]: Started rendering model main_marts.dim_account
+12:24:27.779263 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+12:24:27.779331 [debug]: Started analyzing model main_marts.dim_account
+12:24:27.779362 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+12:24:27.787970 [info ]:  Succeeded [  0.01s] model main_marts.dim_account (table)
+12:24:27.787994 [debug]: Finished analyzing [  0.01s] model main_marts.dim_account [success]
+12:24:27.788016 [info ]: Started model main_marts.fct_churn
+12:24:27.788024 [debug]: Started rendering model main_marts.fct_churn
+12:24:27.788038 [info ]: Started model main_marts.fct_subscriptions
+12:24:27.788043 [debug]: Started rendering model main_marts.fct_subscriptions
+12:24:27.788798 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+12:24:27.788843 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+12:24:27.788865 [debug]: Started analyzing model main_marts.fct_subscriptions
+12:24:27.789008 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+12:24:27.789037 [debug]: Started analyzing model main_marts.fct_churn
+12:24:27.789062 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+12:24:27.793964 [info ]:  Succeeded [  0.01s] model main_marts.fct_churn (table)
+12:24:27.793993 [debug]: Finished analyzing [  0.00s] model main_marts.fct_churn [success]
+12:24:27.799570 [info ]:  Succeeded [  0.01s] model main_marts.fct_subscriptions (table)
+12:24:27.799593 [debug]: Finished analyzing [  0.01s] model main_marts.fct_subscriptions [success]
+12:24:27.799614 [info ]: Started model main_marts.fct_feature_usage
+12:24:27.799622 [debug]: Started rendering model main_marts.fct_feature_usage
+12:24:27.801024 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+12:24:27.801073 [debug]: Started analyzing model main_marts.fct_feature_usage
+12:24:27.801117 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+12:24:27.801128 [info ]: Finished rendering [  0.03s] (5 nodes, 0 skipped, 0 errors)
+12:24:27.805900 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+12:24:27.805928 [debug]: Finished analyzing [  0.00s] model main_marts.fct_feature_usage [success]
+12:24:27.805934 [info ]: Finished analyzing [  0.03s] (5 nodes, 0 skipped, 0 errors)
+12:24:27.814985 [info ]: Cached model count updated: 11 models (accurate)
+12:24:27.891482 [info ]: Started loading project
+12:24:27.892158 [info ]: Loading profiles.yml
+12:24:27.896569 [info ]: Started parsing
+12:24:27.912520 [info ]: Finished loading project [  0.02s]
+12:24:27.914476 [info ]: Finished parsing [  0.02s]
+12:24:27.915675 [info ]: Cached model count updated: 11 models (estimate)
+12:24:27.915687 [info ]: Cached model count updated: 11 models (accurate)
+12:24:27.915718 [info ]: Started scheduling
+12:24:27.915758 [info ]: Finished scheduling [  0.00s]
+12:24:27.915763 [debug]: Incremental compilation - 0 nodes selected: {}
+12:24:27.917924 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+12:24:27.918243 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+12:24:27.918619 [info ]: Started deferring state
+12:24:27.918633 [info ]: Finished deferring state [  0.00s]
+12:24:27.918852 [info ]: Started downloading schemas
+12:24:27.918871 [debug]:    Started downloading relations
+12:24:27.918889 [debug]:   Finished [  0.00s] downloading relations
+12:24:27.918900 [info ]: Finished downloading schemas [  0.00s]
+12:24:28.056397 [info ]: Started building task graph
+12:24:28.056440 [info ]: Finished building task graph [  0.00s]
+12:24:28.063578 [info ]: Cached model count updated: 11 models (accurate)
+12:42:39.915451 [info ]: Started loading project
+12:42:39.916366 [info ]: Loading profiles.yml
+12:42:39.922316 [info ]: Started parsing
+12:42:39.939243 [info ]: Finished loading project [  0.02s]
+12:42:39.942466 [debug]: Finished parsing models\staging\stg_churn_events.sql [  0.00s]
+12:42:39.942735 [info ]: Finished parsing [  0.02s]
+12:42:39.943870 [info ]: Cached model count updated: 11 models (estimate)
+12:42:39.943882 [info ]: Cached model count updated: 11 models (accurate)
+12:42:39.943922 [info ]: Started scheduling
+12:42:39.944074 [info ]: Finished scheduling [  0.00s]
+12:42:39.944086 [debug]: Incremental compilation - 5 nodes selected: {"model.dbt_ravenstack.dim_account", "model.dbt_ravenstack.fct_churn", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_churn_events"}
+12:42:39.944440 [info ]: Started deferring state
+12:42:39.944451 [info ]: Finished deferring state [  0.00s]
+12:42:39.944728 [info ]: Started downloading schemas
+12:42:39.944780 [debug]:    Started downloading relations
+12:42:39.944797 [debug]:   Finished [  0.00s] downloading relations
+12:42:39.944807 [info ]: Finished downloading schemas [  0.00s]
+12:42:40.086743 [info ]: Started building task graph
+12:42:40.086872 [info ]: Finished building task graph [  0.00s]
+12:42:40.087061 [info ]: Started rendering (5 nodes)
+12:42:40.087082 [info ]: Started model main_staging.stg_churn_events
+12:42:40.087097 [debug]: Started rendering model main_staging.stg_churn_events
+12:42:40.088846 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_churn_events at target\.lsp\compiled\models\staging\stg_churn_events.sql
+12:42:40.088918 [info ]: Started analyzing (5 nodes)
+12:42:40.088917 [debug]: Finished rendering [  0.00s] model main_staging.stg_churn_events [success]
+12:42:40.088925 [debug]: Started analyzing model main_staging.stg_churn_events
+12:42:40.091091 [info ]:  Succeeded [  0.00s] model main_staging.stg_churn_events (view)
+12:42:40.091117 [debug]: Finished analyzing [  0.00s] model main_staging.stg_churn_events [success]
+12:42:40.091130 [info ]: Started model main_marts.dim_account
+12:42:40.091137 [debug]: Started rendering model main_marts.dim_account
+12:42:40.092218 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+12:42:40.092257 [debug]: Started analyzing model main_marts.dim_account
+12:42:40.092263 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+12:42:40.099498 [info ]:  Succeeded [  0.01s] model main_marts.dim_account (table)
+12:42:40.099524 [debug]: Finished analyzing [  0.01s] model main_marts.dim_account [success]
+12:42:40.099544 [info ]: Started model main_marts.fct_subscriptions
+12:42:40.099554 [debug]: Started rendering model main_marts.fct_subscriptions
+12:42:40.099570 [info ]: Started model main_marts.fct_churn
+12:42:40.099578 [debug]: Started rendering model main_marts.fct_churn
+12:42:40.100094 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+12:42:40.100130 [debug]: Started analyzing model main_marts.fct_churn
+12:42:40.100138 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+12:42:40.100191 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+12:42:40.100218 [debug]: Started analyzing model main_marts.fct_subscriptions
+12:42:40.100401 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+12:42:40.104919 [info ]:  Succeeded [  0.00s] model main_marts.fct_churn (table)
+12:42:40.104946 [debug]: Finished analyzing [  0.00s] model main_marts.fct_churn [success]
+12:42:40.109540 [info ]:  Succeeded [  0.01s] model main_marts.fct_subscriptions (table)
+12:42:40.109563 [debug]: Finished analyzing [  0.01s] model main_marts.fct_subscriptions [success]
+12:42:40.109581 [info ]: Started model main_marts.fct_feature_usage
+12:42:40.109589 [debug]: Started rendering model main_marts.fct_feature_usage
+12:42:40.109890 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+12:42:40.109921 [debug]: Started analyzing model main_marts.fct_feature_usage
+12:42:40.109934 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+12:42:40.109945 [info ]: Finished rendering [  0.02s] (5 nodes, 0 skipped, 0 errors)
+12:42:40.114679 [info ]:  Succeeded [  0.00s] model main_marts.fct_feature_usage (table)
+12:42:40.114708 [debug]: Finished analyzing [  0.00s] model main_marts.fct_feature_usage [success]
+12:42:40.114715 [info ]: Finished analyzing [  0.03s] (5 nodes, 0 skipped, 0 errors)
+12:42:40.120524 [info ]: Cached model count updated: 11 models (accurate)
+12:42:40.242587 [info ]: Started loading project
+12:42:40.243110 [info ]: Loading profiles.yml
+12:42:40.247537 [info ]: Started parsing
+12:42:40.263851 [info ]: Finished loading project [  0.02s]
+12:42:40.266070 [info ]: Finished parsing [  0.02s]
+12:42:40.267408 [info ]: Cached model count updated: 11 models (estimate)
+12:42:40.267421 [info ]: Cached model count updated: 11 models (accurate)
+12:42:40.267460 [info ]: Started scheduling
+12:42:40.267505 [info ]: Finished scheduling [  0.00s]
+12:42:40.267515 [debug]: Incremental compilation - 0 nodes selected: {}
+12:42:40.267526 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+12:42:40.267531 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+12:42:40.267954 [info ]: Started deferring state
+12:42:40.267965 [info ]: Finished deferring state [  0.00s]
+12:42:40.268220 [info ]: Started downloading schemas
+12:42:40.268242 [debug]:    Started downloading relations
+12:42:40.268256 [debug]:   Finished [  0.00s] downloading relations
+12:42:40.268269 [info ]: Finished downloading schemas [  0.00s]
+12:42:40.419020 [info ]: Started building task graph
+12:42:40.419061 [info ]: Finished building task graph [  0.00s]
+12:42:40.425436 [info ]: Cached model count updated: 11 models (accurate)
+12:42:47.853709 [info ]: Started loading project
+12:42:47.854248 [info ]: Loading profiles.yml
+12:42:47.859242 [info ]: Started parsing
+12:42:47.876370 [info ]: Finished loading project [  0.02s]
+12:42:47.878711 [debug]: Finished parsing models\staging\stg_feature_usage.sql [  0.00s]
+12:42:47.879095 [info ]: Finished parsing [  0.02s]
+12:42:47.880361 [info ]: Cached model count updated: 11 models (estimate)
+12:42:47.880373 [info ]: Cached model count updated: 11 models (accurate)
+12:42:47.880411 [info ]: Started scheduling
+12:42:47.880519 [info ]: Finished scheduling [  0.00s]
+12:42:47.880530 [debug]: Incremental compilation - 2 nodes selected: {"model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.stg_feature_usage"}
+12:42:47.880921 [info ]: Started deferring state
+12:42:47.880932 [info ]: Finished deferring state [  0.00s]
+12:42:47.881276 [info ]: Started downloading schemas
+12:42:47.882196 [debug]:    Started downloading relations
+12:42:47.882223 [debug]:   Finished [  0.00s] downloading relations
+12:42:47.882236 [info ]: Finished downloading schemas [  0.00s]
+12:42:48.026616 [info ]: Started building task graph
+12:42:48.026695 [info ]: Finished building task graph [  0.00s]
+12:42:48.026830 [info ]: Started rendering (2 nodes)
+12:42:48.026847 [info ]: Started model main_staging.stg_feature_usage
+12:42:48.026856 [debug]: Started rendering model main_staging.stg_feature_usage
+12:42:48.028297 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_feature_usage at target\.lsp\compiled\models\staging\stg_feature_usage.sql
+12:42:48.028342 [info ]: Started analyzing (2 nodes)
+12:42:48.028351 [debug]: Started analyzing model main_staging.stg_feature_usage
+12:42:48.028360 [debug]: Finished rendering [  0.00s] model main_staging.stg_feature_usage [success]
+12:42:48.029834 [info ]:  Succeeded [  0.00s] model main_staging.stg_feature_usage (view)
+12:42:48.029850 [debug]: Finished analyzing [  0.00s] model main_staging.stg_feature_usage [success]
+12:42:48.029863 [info ]: Started model main_marts.fct_feature_usage
+12:42:48.029869 [debug]: Started rendering model main_marts.fct_feature_usage
+12:42:48.030138 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+12:42:48.030164 [debug]: Started analyzing model main_marts.fct_feature_usage
+12:42:48.030627 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+12:42:48.030640 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+12:42:48.035758 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+12:42:48.035781 [debug]: Finished analyzing [  0.01s] model main_marts.fct_feature_usage [success]
+12:42:48.035787 [info ]: Finished analyzing [  0.01s] (2 nodes, 0 skipped, 0 errors)
+12:42:48.041327 [info ]: Cached model count updated: 11 models (accurate)
+12:42:48.171354 [info ]: Started loading project
+12:42:48.171949 [info ]: Loading profiles.yml
+12:42:48.176233 [info ]: Started parsing
+12:42:48.191126 [info ]: Finished loading project [  0.02s]
+12:42:48.192939 [info ]: Finished parsing [  0.02s]
+12:42:48.194135 [info ]: Cached model count updated: 11 models (estimate)
+12:42:48.194148 [info ]: Cached model count updated: 11 models (accurate)
+12:42:48.194196 [info ]: Started scheduling
+12:42:48.194240 [info ]: Finished scheduling [  0.00s]
+12:42:48.194249 [debug]: Incremental compilation - 0 nodes selected: {}
+12:42:48.194258 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+12:42:48.194262 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+12:42:48.194597 [info ]: Started deferring state
+12:42:48.194608 [info ]: Finished deferring state [  0.00s]
+12:42:48.194835 [info ]: Started downloading schemas
+12:42:48.194856 [debug]:    Started downloading relations
+12:42:48.194868 [debug]:   Finished [  0.00s] downloading relations
+12:42:48.194876 [info ]: Finished downloading schemas [  0.00s]
+12:42:48.336060 [info ]: Started building task graph
+12:42:48.336100 [info ]: Finished building task graph [  0.00s]
+12:42:48.341280 [info ]: Cached model count updated: 11 models (accurate)
+12:43:16.904855 [info ]: Started loading project
+12:43:16.905356 [info ]: Loading profiles.yml
+12:43:16.909590 [info ]: Started parsing
+12:43:16.926770 [info ]: Finished loading project [  0.02s]
+12:43:16.929698 [debug]: Finished parsing models\staging\stg_subscriptions.sql [  0.00s]
+12:43:16.930246 [info ]: Finished parsing [  0.02s]
+12:43:16.931669 [info ]: Cached model count updated: 11 models (estimate)
+12:43:16.931683 [info ]: Cached model count updated: 11 models (accurate)
+12:43:16.931725 [info ]: Started scheduling
+12:43:16.931876 [info ]: Finished scheduling [  0.00s]
+12:43:16.931891 [debug]: Incremental compilation - 4 nodes selected: {"model.dbt_ravenstack.dim_plan", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_subscriptions"}
+12:43:16.932504 [info ]: Started deferring state
+12:43:16.932525 [info ]: Finished deferring state [  0.00s]
+12:43:16.932870 [info ]: Started downloading schemas
+12:43:16.932915 [debug]:    Started downloading relations
+12:43:16.932933 [debug]:   Finished [  0.00s] downloading relations
+12:43:16.932944 [info ]: Finished downloading schemas [  0.00s]
+12:43:17.083900 [info ]: Started building task graph
+12:43:17.084012 [info ]: Finished building task graph [  0.00s]
+12:43:17.084166 [info ]: Started rendering (4 nodes)
+12:43:17.084184 [info ]: Started model main_staging.stg_subscriptions
+12:43:17.084197 [debug]: Started rendering model main_staging.stg_subscriptions
+12:43:17.085689 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_subscriptions at target\.lsp\compiled\models\staging\stg_subscriptions.sql
+12:43:17.085744 [info ]: Started analyzing (4 nodes)
+12:43:17.085752 [debug]: Started analyzing model main_staging.stg_subscriptions
+12:43:17.085795 [debug]: Finished rendering [  0.00s] model main_staging.stg_subscriptions [success]
+12:43:17.087745 [info ]:  Succeeded [  0.00s] model main_staging.stg_subscriptions (view)
+12:43:17.087764 [debug]: Finished analyzing [  0.00s] model main_staging.stg_subscriptions [success]
+12:43:17.087783 [info ]: Started model main_marts.dim_plan
+12:43:17.087792 [debug]: Started rendering model main_marts.dim_plan
+12:43:17.088105 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_plan at target\.lsp\compiled\models\marts\dim_plan.sql
+12:43:17.088138 [debug]: Started analyzing model main_marts.dim_plan
+12:43:17.088163 [debug]: Finished rendering [  0.00s] model main_marts.dim_plan [success]
+12:43:17.091532 [info ]:  Succeeded [  0.00s] model main_marts.dim_plan (table)
+12:43:17.091560 [debug]: Finished analyzing [  0.00s] model main_marts.dim_plan [success]
+12:43:17.091585 [info ]: Started model main_marts.fct_subscriptions
+12:43:17.091597 [debug]: Started rendering model main_marts.fct_subscriptions
+12:43:17.091992 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+12:43:17.092061 [debug]: Started analyzing model main_marts.fct_subscriptions
+12:43:17.092155 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+12:43:17.102959 [info ]:  Succeeded [  0.01s] model main_marts.fct_subscriptions (table)
+12:43:17.102992 [debug]: Finished analyzing [  0.01s] model main_marts.fct_subscriptions [success]
+12:43:17.103027 [info ]: Started model main_marts.fct_feature_usage
+12:43:17.103037 [debug]: Started rendering model main_marts.fct_feature_usage
+12:43:17.103537 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+12:43:17.103579 [debug]: Started analyzing model main_marts.fct_feature_usage
+12:43:17.103780 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+12:43:17.103798 [info ]: Finished rendering [  0.02s] (4 nodes, 0 skipped, 0 errors)
+12:43:17.109133 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+12:43:17.109164 [debug]: Finished analyzing [  0.01s] model main_marts.fct_feature_usage [success]
+12:43:17.109170 [info ]: Finished analyzing [  0.02s] (4 nodes, 0 skipped, 0 errors)
+12:43:17.115416 [info ]: Cached model count updated: 11 models (accurate)
+12:43:17.238528 [info ]: Started loading project
+12:43:17.239089 [info ]: Loading profiles.yml
+12:43:17.243255 [info ]: Started parsing
+12:43:17.259433 [info ]: Finished loading project [  0.02s]
+12:43:17.261348 [info ]: Finished parsing [  0.02s]
+12:43:17.262513 [info ]: Cached model count updated: 11 models (estimate)
+12:43:17.262524 [info ]: Cached model count updated: 11 models (accurate)
+12:43:17.262557 [info ]: Started scheduling
+12:43:17.262604 [info ]: Finished scheduling [  0.00s]
+12:43:17.262611 [debug]: Incremental compilation - 0 nodes selected: {}
+12:43:17.262621 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+12:43:17.262624 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+12:43:17.262964 [info ]: Started deferring state
+12:43:17.262977 [info ]: Finished deferring state [  0.00s]
+12:43:17.263219 [info ]: Started downloading schemas
+12:43:17.263241 [debug]:    Started downloading relations
+12:43:17.263254 [debug]:   Finished [  0.00s] downloading relations
+12:43:17.263268 [info ]: Finished downloading schemas [  0.00s]
+12:43:17.410104 [info ]: Started building task graph
+12:43:17.410151 [info ]: Finished building task graph [  0.00s]
+12:43:17.417497 [info ]: Cached model count updated: 11 models (accurate)
+12:46:12.839155 [info ]: Started loading project
+12:46:12.839751 [info ]: Loading profiles.yml
+12:46:12.845348 [info ]: Started parsing
+12:46:12.862716 [info ]: Finished loading project [  0.02s]
+12:46:12.865500 [debug]: Finished parsing models\staging\stg_support_tickets.sql [  0.00s]
+12:46:12.865874 [info ]: Finished parsing [  0.02s]
+12:46:12.867041 [info ]: Cached model count updated: 11 models (estimate)
+12:46:12.867051 [info ]: Cached model count updated: 11 models (accurate)
+12:46:12.867087 [info ]: Started scheduling
+12:46:12.867223 [info ]: Finished scheduling [  0.00s]
+12:46:12.867234 [debug]: Incremental compilation - 5 nodes selected: {"model.dbt_ravenstack.dim_account", "model.dbt_ravenstack.fct_churn", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_support_tickets"}
+12:46:12.867575 [info ]: Started deferring state
+12:46:12.867585 [info ]: Finished deferring state [  0.00s]
+12:46:12.867818 [info ]: Started downloading schemas
+12:46:12.867873 [debug]:    Started downloading relations
+12:46:12.867885 [debug]:   Finished [  0.00s] downloading relations
+12:46:12.867893 [info ]: Finished downloading schemas [  0.00s]
+12:46:13.009826 [info ]: Started building task graph
+12:46:13.009938 [info ]: Finished building task graph [  0.00s]
+12:46:13.010098 [info ]: Started rendering (5 nodes)
+12:46:13.010124 [info ]: Started model main_staging.stg_support_tickets
+12:46:13.010134 [debug]: Started rendering model main_staging.stg_support_tickets
+12:46:13.011864 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_support_tickets at target\.lsp\compiled\models\staging\stg_support_tickets.sql
+12:46:13.011905 [info ]: Started analyzing (5 nodes)
+12:46:13.011912 [debug]: Started analyzing model main_staging.stg_support_tickets
+12:46:13.011908 [debug]: Finished rendering [  0.00s] model main_staging.stg_support_tickets [success]
+12:46:13.013901 [info ]:  Succeeded [  0.00s] model main_staging.stg_support_tickets (view)
+12:46:13.013917 [debug]: Finished analyzing [  0.00s] model main_staging.stg_support_tickets [success]
+12:46:13.013930 [info ]: Started model main_marts.dim_account
+12:46:13.013936 [debug]: Started rendering model main_marts.dim_account
+12:46:13.014218 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+12:46:13.014245 [debug]: Started analyzing model main_marts.dim_account
+12:46:13.014251 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+12:46:13.022964 [info ]:  Succeeded [  0.01s] model main_marts.dim_account (table)
+12:46:13.022986 [debug]: Finished analyzing [  0.01s] model main_marts.dim_account [success]
+12:46:13.023003 [info ]: Started model main_marts.fct_subscriptions
+12:46:13.023011 [debug]: Started rendering model main_marts.fct_subscriptions
+12:46:13.023023 [info ]: Started model main_marts.fct_churn
+12:46:13.023028 [debug]: Started rendering model main_marts.fct_churn
+12:46:13.024205 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+12:46:13.024252 [debug]: Started analyzing model main_marts.fct_subscriptions
+12:46:13.024287 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+12:46:13.024324 [debug]: Started analyzing model main_marts.fct_churn
+12:46:13.024340 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+12:46:13.024355 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+12:46:13.029130 [info ]:  Succeeded [  0.01s] model main_marts.fct_churn (table)
+12:46:13.029152 [debug]: Finished analyzing [  0.00s] model main_marts.fct_churn [success]
+12:46:13.033816 [info ]:  Succeeded [  0.01s] model main_marts.fct_subscriptions (table)
+12:46:13.033844 [debug]: Finished analyzing [  0.01s] model main_marts.fct_subscriptions [success]
+12:46:13.033865 [info ]: Started model main_marts.fct_feature_usage
+12:46:13.033873 [debug]: Started rendering model main_marts.fct_feature_usage
+12:46:13.034362 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+12:46:13.034401 [debug]: Started analyzing model main_marts.fct_feature_usage
+12:46:13.034505 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+12:46:13.034518 [info ]: Finished rendering [  0.02s] (5 nodes, 0 skipped, 0 errors)
+12:46:13.039400 [info ]:  Succeeded [  0.00s] model main_marts.fct_feature_usage (table)
+12:46:13.039427 [debug]: Finished analyzing [  0.01s] model main_marts.fct_feature_usage [success]
+12:46:13.039433 [info ]: Finished analyzing [  0.03s] (5 nodes, 0 skipped, 0 errors)
+12:46:13.044527 [info ]: Cached model count updated: 11 models (accurate)
+12:46:13.177231 [info ]: Started loading project
+12:46:13.177903 [info ]: Loading profiles.yml
+12:46:13.183078 [info ]: Started parsing
+12:46:13.199188 [info ]: Finished loading project [  0.02s]
+12:46:13.201462 [info ]: Finished parsing [  0.02s]
+12:46:13.203190 [info ]: Cached model count updated: 11 models (estimate)
+12:46:13.203201 [info ]: Cached model count updated: 11 models (accurate)
+12:46:13.203269 [info ]: Started scheduling
+12:46:13.203321 [info ]: Finished scheduling [  0.00s]
+12:46:13.203330 [debug]: Incremental compilation - 0 nodes selected: {}
+12:46:13.203344 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+12:46:13.203350 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+12:46:13.203835 [info ]: Started deferring state
+12:46:13.203846 [info ]: Finished deferring state [  0.00s]
+12:46:13.204198 [info ]: Started downloading schemas
+12:46:13.204222 [debug]:    Started downloading relations
+12:46:13.204236 [debug]:   Finished [  0.00s] downloading relations
+12:46:13.204244 [info ]: Finished downloading schemas [  0.00s]
+12:46:13.351431 [info ]: Started building task graph
+12:46:13.351494 [info ]: Finished building task graph [  0.00s]
+12:46:13.356545 [info ]: Cached model count updated: 11 models (accurate)

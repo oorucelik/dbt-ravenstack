@@ -1,9 +1,8 @@
 # PyBuilder
 target/
-
 # dbt logs
 logs/
-
 # dbt cache
 .dbt/*
 dbt_internal_packages/
+dbt.log

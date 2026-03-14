@@ -10,7 +10,6 @@ final as (
         quarter_of_year as quarter,
         day_of_week,
         month_name,
-        day_name,
         -- dbt-date provides 'is_weekend' out of the box (boolean)
         is_weekend
     from date_dimension
