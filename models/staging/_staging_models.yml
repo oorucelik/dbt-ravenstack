@@ -1,0 +1,56 @@
+models:
+  - name: stg_accounts
+    description: ""
+    columns:
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_churn_events
+    description: ""
+    columns:
+      - name: churn_event_id
+        tests:
+          - unique
+          - not_null
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_feature_usage
+    description: ""
+    columns:
+      - name: usage_id
+        tests:
+          - unique
+          - not_null
+      - name: subscription_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_subscriptions
+    description: ""
+    columns:
+      - name: subscription_id
+        tests:
+          - unique
+          - not_null
+      - name: account_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_support_tickets
+    description: ""
+    columns:
+      - name: ticket_id
+        tests:
+          - unique
+          - not_null
+      - name: account_id
+        tests:
+          - unique
+          - not_null

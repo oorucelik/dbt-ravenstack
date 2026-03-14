@@ -14,7 +14,7 @@ renamed as (
         cast(is_beta_feature as boolean) as is_beta_feature,
         current_timestamp as _loaded_at
     from source
-    where usage_id is not null
+    where usage_id is not null --check this
 )
 
 select * from renamed
