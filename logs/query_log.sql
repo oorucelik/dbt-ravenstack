@@ -1,39 +1,61 @@
--- created_at: 2026-03-14T12:48:51.172581400+00:00
--- finished_at: 2026-03-14T12:48:51.180147800+00:00
--- elapsed: 7ms
+-- created_at: 2026-03-14T19:48:04.799886100+00:00
+-- finished_at: 2026-03-14T19:48:04.808056900+00:00
+-- elapsed: 8ms
 -- outcome: success
 -- dialect: duckdb
 -- node_id: not available
 -- query_id: not available
 -- desc: Get table schema
-DESCRIBE "ravenstack"."main_raw"."ravenstack_support_tickets";
--- created_at: 2026-03-14T12:48:51.533247500+00:00
--- finished_at: 2026-03-14T12:48:51.537896700+00:00
--- elapsed: 4ms
+DESCRIBE "ravenstack"."main_marts"."fct_subscriptions";
+-- created_at: 2026-03-14T19:48:04.799886100+00:00
+-- finished_at: 2026-03-14T19:48:04.808056900+00:00
+-- elapsed: 8ms
+-- outcome: success
+-- dialect: duckdb
+-- node_id: not available
+-- query_id: not available
+-- desc: Get table schema
+DESCRIBE "ravenstack"."main_staging"."stg_feature_usage";
+-- created_at: 2026-03-14T19:48:05.335579100+00:00
+-- finished_at: 2026-03-14T19:48:05.346811200+00:00
+-- elapsed: 11ms
 -- outcome: success
 -- dialect: duckdb
 -- node_id: not available
 -- query_id: not available
 -- desc: dbt run query
-select * from (with source as (
-    select * from "ravenstack"."main_raw"."ravenstack_support_tickets"
+select * from (-- fct_feature_usage: Feature usage fact table
+-- Grain: one row per daily feature usage log
+
+with usage as (
+    select * from "ravenstack"."main_staging"."stg_feature_usage"
 ),
 
-renamed as (
-    select
-        ticket_id,
-        account_id,
-        cast(submitted_at as date) as submitted_date,
-        cast(closed_at as timestamp) as closed_at,
-        resolution_time_hours,
-        priority,
-        first_response_time_minutes,
-        satisfaction_score,
-        cast(escalation_flag as boolean) as is_escalated,
-        current_timestamp as _loaded_at
-    from source
-    where ticket_id is not null
+subscriptions as (
+    select subscription_id, subscription_key, account_key
+    from "ravenstack"."main_marts"."fct_subscriptions"
 )
 
-select * from renamed
+select
+    md5(cast(coalesce(cast(u.usage_id as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT))  as usage_key,
+    u.usage_id,
+
+    -- Foreign keys
+    s.subscription_key,
+    s.account_key,
+
+    -- Dimensions
+    u.usage_date,
+    u.feature_name,
+    u.is_beta_feature,
+
+    -- Measures
+    u.usage_count,
+    u.usage_duration_secs,
+    round(u.usage_duration_secs / 60.0, 2)            as usage_duration_mins,
+    u.error_count,
+    case when u.error_count > 0 then true else false end as had_errors
+
+from usage u
+left join subscriptions s on u.subscription_id = s.subscription_id
 ) limit 1000;

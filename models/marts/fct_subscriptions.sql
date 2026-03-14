@@ -50,7 +50,7 @@ select
         when s.end_date is null and s.has_churned = false then 'active'
         when s.has_churned = true then 'churned'
         else 'expired'
-    end                                               as subscription_status
+    end as subscription_status
 
 from subscriptions s
 left join accounts a on s.account_id = a.account_id
