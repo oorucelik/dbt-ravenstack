@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="account_id", model=get_where_subquery(source('raw', 'ravenstack_subscriptions'))) }}

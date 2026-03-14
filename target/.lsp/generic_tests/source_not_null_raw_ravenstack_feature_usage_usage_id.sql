@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="usage_id", model=get_where_subquery(source('raw', 'ravenstack_feature_usage'))) }}

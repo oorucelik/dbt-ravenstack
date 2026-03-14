@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: dim_account
+    description: "Account dimension enriched with support and churn aggregates"
+    columns:
+      - name: account_key
+        description: "Surrogate key for the account dimension"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_plan
+    description: "Subscription plan dimension (plan_tier + billing_frequency)"
+    columns:
+      - name: plan_key
+        description: "Surrogate key for the plan dimension"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_date
+    description: "Calendar date dimension (2023-01-01 to 2025-01-01)"
+    columns:
+      - name: date_key
+        description: "Surrogate key for the date dimension"
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_subscriptions
+    description: "Subscription events with MRR, duration, and status"
+    columns:
+      - name: subscription_key
+        description: "Surrogate key for subscriptions"
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_feature_usage
+    description: "Daily feature usage logs per subscription"
+    columns:
+      - name: usage_key
+        description: "Surrogate key for usage logs"
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_churn
+    description: "Churn events with reasons, refunds, and reactivation flags"
+    columns:
+      - name: churn_key
+        description: "Surrogate key for churn events"
+        tests:
+          - unique
+          - not_null

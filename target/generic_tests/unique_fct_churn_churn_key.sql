@@ -1,0 +1,1 @@
+{{ test_unique(column_name="churn_key", model=get_where_subquery(ref('fct_churn'))) }}

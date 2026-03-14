@@ -1,0 +1,1228 @@
+==================== 2026-03-14T09:23:12.636896Z | 651ce500-c776-493a-974a-102bf94e60d9 ====================
+09:23:12.636983 [info ]: Starting dbt LSP server
+09:23:12.637035 [info ]: Connecting to LSP client on port 8000
+09:23:12.639497 [info ]: Successfully connected to LSP client
+09:23:12.639549 [info ]: Creating LSP service...
+09:23:12.703547 [info ]: Creating LSP server...
+09:23:12.703581 [info ]: Starting LSP server...
+09:23:12.853030 [info ]: Started loading project
+09:23:12.857008 [info ]: Loading profiles.yml
+09:23:12.862770 [info ]: Loading packages.yml
+09:23:12.862933 [debug]:    Started loading packages
+09:23:12.873636 [debug]:     Loaded [  0.01s] packages
+09:23:12.874447 [info ]: Started parsing
+09:23:12.923154 [info ]: Finished loading project [  0.07s]
+09:23:12.978786 [debug]: Finished parsing models\marts\_marts_models.yml [  0.01s]
+09:23:12.980474 [debug]: Finished parsing models\staging\_stg_sources.yml [  0.00s]
+09:23:13.027872 [debug]: Finished parsing models\marts\dim_account.sql [  0.01s]
+09:23:13.029074 [debug]: Finished parsing models\marts\dim_date.sql [  0.00s]
+09:23:13.029793 [debug]: Finished parsing models\marts\dim_plan.sql [  0.00s]
+09:23:13.030309 [debug]: Finished parsing models\marts\fct_churn.sql [  0.00s]
+09:23:13.030840 [debug]: Finished parsing models\marts\fct_feature_usage.sql [  0.00s]
+09:23:13.031312 [debug]: Finished parsing models\marts\fct_subscriptions.sql [  0.00s]
+09:23:13.031951 [debug]: Finished parsing models\staging\stg_accounts.sql [  0.00s]
+09:23:13.032236 [debug]: Finished parsing models\staging\stg_churn_events.sql [  0.00s]
+09:23:13.032496 [debug]: Finished parsing models\staging\stg_feature_usage.sql [  0.00s]
+09:23:13.032747 [debug]: Finished parsing models\staging\stg_subscriptions.sql [  0.00s]
+09:23:13.053875 [debug]: Finished parsing models\staging\stg_support_tickets.sql [  0.02s]
+09:23:13.056612 [debug]: Finished parsing target\generic_tests\source_unique_raw_ravenstack_accounts_account_id.sql [  0.00s]
+09:23:13.057233 [debug]: Finished parsing target\generic_tests\source_not_null_raw_ravenstack_accounts_account_id.sql [  0.00s]
+09:23:13.057689 [debug]: Finished parsing target\generic_tests\source_unique_raw_ravenstack_churn_events_churn_event_id.sql [  0.00s]
+09:23:13.058164 [debug]: Finished parsing target\generic_tests\source_not_null_raw_ravenstack_churn_events_churn_event_id.sql [  0.00s]
+09:23:13.058552 [debug]: Finished parsing target\generic_tests\source_unique_raw_ravenstack_feature_usage_usage_id.sql [  0.00s]
+09:23:13.058963 [debug]: Finished parsing target\generic_tests\source_not_null_raw_ravenstack_feature_usage_usage_id.sql [  0.00s]
+09:23:13.059370 [debug]: Finished parsing target\generic_tests\source_not_null_raw_ravenstack_subscriptions_account_id.sql [  0.00s]
+09:23:13.059728 [debug]: Finished parsing target\generic_tests\source_unique_raw_ravenstack_subscriptions_subscription_id.sql [  0.00s]
+09:23:13.060066 [debug]: Finished parsing target\generic_tests\source_not_null_raw_ravenstack_subscriptions_subscription_id.sql [  0.00s]
+09:23:13.060404 [debug]: Finished parsing target\generic_tests\source_unique_raw_ravenstack_support_tickets_ticket_id.sql [  0.00s]
+09:23:13.060769 [debug]: Finished parsing target\generic_tests\source_not_null_raw_ravenstack_support_tickets_ticket_id.sql [  0.00s]
+09:23:13.061159 [debug]: Finished parsing target\generic_tests\unique_dim_account_account_key.sql [  0.00s]
+09:23:13.061502 [debug]: Finished parsing target\generic_tests\not_null_dim_account_account_key.sql [  0.00s]
+09:23:13.061834 [debug]: Finished parsing target\generic_tests\unique_dim_date_date_key.sql [  0.00s]
+09:23:13.062246 [debug]: Finished parsing target\generic_tests\not_null_dim_date_date_key.sql [  0.00s]
+09:23:13.062924 [debug]: Finished parsing target\generic_tests\unique_dim_plan_plan_key.sql [  0.00s]
+09:23:13.063552 [debug]: Finished parsing target\generic_tests\not_null_dim_plan_plan_key.sql [  0.00s]
+09:23:13.063941 [debug]: Finished parsing target\generic_tests\unique_fct_churn_churn_key.sql [  0.00s]
+09:23:13.064300 [debug]: Finished parsing target\generic_tests\not_null_fct_churn_churn_key.sql [  0.00s]
+09:23:13.064663 [debug]: Finished parsing target\generic_tests\unique_fct_feature_usage_usage_key.sql [  0.00s]
+09:23:13.065052 [debug]: Finished parsing target\generic_tests\not_null_fct_feature_usage_usage_key.sql [  0.00s]
+09:23:13.065398 [debug]: Finished parsing target\generic_tests\unique_fct_subscriptions_subscription_key.sql [  0.00s]
+09:23:13.072637 [debug]: Finished parsing target\generic_tests\not_null_fct_subscriptions_subscription_key.sql [  0.01s]
+09:23:13.078721 [info ]: Finished parsing [  0.20s]
+09:23:13.082622 [info ]: Cached model count updated: 11 models (estimate)
+09:23:13.082637 [info ]: Cached model count updated: 11 models (accurate)
+09:23:13.084497 [info ]: Started scheduling
+09:23:13.087656 [info ]: Finished scheduling [  0.00s]
+09:23:13.088046 [info ]: Started scheduling
+09:23:13.088158 [info ]: Finished scheduling [  0.00s]
+09:23:13.091808 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ravenstack", schema: "raw", table: "ravenstack_churn_events" }) and interval: None
+09:23:13.092114 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ravenstack", schema: "raw", table: "ravenstack_subscriptions" }) and interval: None
+09:23:13.092138 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ravenstack", schema: "raw", table: "ravenstack_support_tickets" }) and interval: None
+09:23:13.092156 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ravenstack", schema: "raw", table: "ravenstack_accounts" }) and interval: None
+09:23:13.092172 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ravenstack", schema: "raw", table: "ravenstack_feature_usage" }) and interval: None
+09:23:13.097429 [info ]: Started deferring state
+09:23:13.097653 [info ]: Finished deferring state [  0.00s]
+09:23:13.127656 [info ]: Started downloading schemas
+09:23:13.129179 [debug]:    Started downloading relations
+09:23:13.130736 [debug]:   Finished [  0.00s] downloading relations
+09:23:13.348489 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+09:23:13.348491 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+09:23:13.665248 [info ]: Loading profiles.yml
+09:23:14.350597 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+09:23:14.350605 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+09:23:14.522239 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+09:23:15.533681 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_accounts'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_accounts', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_accounts_account_id.2b7b8f7712' and 1 others: Catalog Error: Table with name ravenstack_accounts does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+                 ^
+09:23:15.534532 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_churn_events', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_churn_events_churn_event_id.99d64a7b74' and 1 others: Catalog Error: Table with name ravenstack_churn_events does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+                 ^
+09:23:15.534574 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_feature_usage', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_feature_usage_usage_id.9c1e8123ff' and 1 others: Catalog Error: Table with name ravenstack_feature_usage does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+                 ^
+09:23:15.534617 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_subscriptions', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_subscriptions_account_id.a055a4d6a9' and 2 others: Catalog Error: Table with name ravenstack_subscriptions does not exist!
+Did you mean "main.duckdb_constraints"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+                 ^
+09:23:15.534639 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_support_tickets', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_support_tickets_ticket_id.6ba0efb0de' and 1 others: Catalog Error: Table with name ravenstack_support_tickets does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+                 ^
+09:23:15.706461 [info ]: Started building task graph
+09:23:15.713049 [info ]: Finished building task graph [  0.01s]
+09:23:15.720669 [info ]: Started rendering (16 nodes)
+09:23:15.721670 [info ]: Started seed main_raw.ravenstack_support_tickets
+09:23:15.723318 [debug]: Started rendering seed main_raw.ravenstack_support_tickets
+09:23:15.723764 [info ]: Started seed main_raw.ravenstack_subscriptions
+09:23:15.723777 [debug]: Started rendering seed main_raw.ravenstack_subscriptions
+09:23:15.723786 [info ]: Started seed main_raw.ravenstack_feature_usage
+09:23:15.723790 [debug]: Started rendering seed main_raw.ravenstack_feature_usage
+09:23:15.723796 [info ]: Started seed main_raw.ravenstack_churn_events
+09:23:15.723793 [info ]: Finished downloading schemas [  2.60s]
+09:23:15.723800 [debug]: Started rendering seed main_raw.ravenstack_churn_events
+09:23:15.723806 [info ]: Started seed main_raw.ravenstack_accounts
+09:23:15.723810 [debug]: Started rendering seed main_raw.ravenstack_accounts
+09:23:15.724010 [info ]: Started model main_marts.fct_feature_usage
+09:23:15.724025 [debug]: Started rendering model main_marts.fct_feature_usage
+09:23:15.724040 [info ]: Started model main_staging.stg_feature_usage
+09:23:15.724048 [debug]: Started rendering model main_staging.stg_feature_usage
+09:23:15.724056 [info ]: Started model main_marts.fct_subscriptions
+09:23:15.724060 [debug]: Started rendering model main_marts.fct_subscriptions
+09:23:15.724074 [info ]: Started model main_marts.fct_churn
+09:23:15.724081 [debug]: Started rendering model main_marts.fct_churn
+09:23:15.724091 [info ]: Started model main_marts.dim_plan
+09:23:15.724095 [debug]: Started rendering model main_marts.dim_plan
+09:23:15.724101 [info ]: Started model main_staging.stg_subscriptions
+09:23:15.724105 [debug]: Started rendering model main_staging.stg_subscriptions
+09:23:15.724110 [info ]: Started model main_marts.dim_date
+09:23:15.724114 [debug]: Started rendering model main_marts.dim_date
+09:23:15.724121 [info ]: Started model main_marts.dim_account
+09:23:15.724125 [debug]: Started rendering model main_marts.dim_account
+09:23:15.724133 [info ]: Started model main_staging.stg_support_tickets
+09:23:15.724137 [debug]: Started rendering model main_staging.stg_support_tickets
+09:23:15.724304 [info ]: Started model main_staging.stg_churn_events
+09:23:15.724320 [debug]: Started rendering model main_staging.stg_churn_events
+09:23:15.724338 [info ]: Started model main_staging.stg_accounts
+09:23:15.724345 [debug]: Started rendering model main_staging.stg_accounts
+09:23:15.739051 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_accounts at target\.lsp\compiled\models\staging\stg_accounts.sql
+09:23:15.739094 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_feature_usage at target\.lsp\compiled\models\staging\stg_feature_usage.sql
+09:23:15.739134 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_support_tickets at target\.lsp\compiled\models\staging\stg_support_tickets.sql
+09:23:15.739158 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_churn_events at target\.lsp\compiled\models\staging\stg_churn_events.sql
+09:23:15.739512 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_subscriptions at target\.lsp\compiled\models\staging\stg_subscriptions.sql
+09:23:15.741579 [info ]:  Succeeded [  0.02s] model main_staging.stg_accounts (view)
+09:23:15.742801 [debug]: Finished rendering [  0.02s] model main_staging.stg_accounts [success]
+09:23:15.743282 [info ]:  Succeeded [  0.02s] model main_staging.stg_support_tickets (view)
+09:23:15.743311 [debug]: Finished rendering [  0.02s] model main_staging.stg_support_tickets [success]
+09:23:15.743330 [info ]:  Succeeded [  0.02s] model main_staging.stg_subscriptions (view)
+09:23:15.743338 [debug]: Finished rendering [  0.02s] model main_staging.stg_subscriptions [success]
+09:23:15.743358 [info ]:  Succeeded [  0.02s] model main_staging.stg_feature_usage (view)
+09:23:15.743368 [debug]: Finished rendering [  0.02s] model main_staging.stg_feature_usage [success]
+09:23:15.743377 [info ]:  Succeeded [  0.02s] model main_staging.stg_churn_events (view)
+09:23:15.743382 [debug]: Finished rendering [  0.02s] model main_staging.stg_churn_events [success]
+09:23:15.764751 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:23:15.764926 [info ]:  Succeeded [  0.04s] model main_marts.fct_subscriptions (table)
+09:23:15.764950 [debug]: Finished rendering [  0.04s] model main_marts.fct_subscriptions [success]
+09:23:15.764972 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_date at target\.lsp\compiled\models\marts\dim_date.sql
+09:23:15.765242 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+09:23:15.765254 [debug]: Finished rendering [  0.04s] model main_marts.dim_date [success]
+09:23:15.765365 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:23:15.765638 [info ]: Started analyzing (6 nodes)
+09:23:15.765654 [debug]: Started analyzing model main_marts.dim_date
+09:23:15.765676 [info ]:  Succeeded [  0.04s] model main_marts.fct_churn (table)
+09:23:15.765690 [debug]: Finished rendering [  0.04s] model main_marts.fct_churn [success]
+09:23:15.765705 [info ]:  Succeeded [  0.04s] model main_marts.fct_feature_usage (table)
+09:23:15.765715 [debug]: Finished rendering [  0.04s] model main_marts.fct_feature_usage [success]
+09:23:15.765768 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+09:23:15.765830 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_plan at target\.lsp\compiled\models\marts\dim_plan.sql
+09:23:15.765846 [info ]:  Succeeded [  0.04s] model main_marts.dim_account (table)
+09:23:15.765871 [debug]: Finished rendering [  0.04s] model main_marts.dim_account [success]
+09:23:15.766037 [info ]:  Succeeded [  0.04s] model main_marts.dim_plan (table)
+09:23:15.766056 [debug]: Finished rendering [  0.04s] model main_marts.dim_plan [success]
+09:23:15.779707 [debug]: Finished rendering [  0.06s] seed main_raw.ravenstack_accounts [success]
+09:23:15.779752 [debug]: Started analyzing seed main_raw.ravenstack_accounts
+09:23:15.779775 [debug]: Finished rendering [  0.06s] seed main_raw.ravenstack_subscriptions [success]
+09:23:15.779783 [debug]: Started analyzing seed main_raw.ravenstack_subscriptions
+09:23:15.779796 [debug]: Finished rendering [  0.06s] seed main_raw.ravenstack_churn_events [success]
+09:23:15.779807 [debug]: Started analyzing seed main_raw.ravenstack_churn_events
+09:23:15.779820 [debug]: Finished rendering [  0.06s] seed main_raw.ravenstack_support_tickets [success]
+09:23:15.779830 [debug]: Started analyzing seed main_raw.ravenstack_support_tickets
+09:23:15.780675 [info ]:  Succeeded [  0.06s] seed  main_raw.ravenstack_support_tickets (table)
+09:23:15.780913 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_support_tickets [success]
+09:23:15.780943 [info ]:  Succeeded [  0.06s] seed  main_raw.ravenstack_churn_events (table)
+09:23:15.780956 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_churn_events [success]
+09:23:15.780967 [info ]:  Succeeded [  0.06s] seed  main_raw.ravenstack_accounts (table)
+09:23:15.780975 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_accounts [success]
+09:23:15.780984 [info ]:  Succeeded [  0.06s] seed  main_raw.ravenstack_subscriptions (table)
+09:23:15.780991 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_subscriptions [success]
+09:23:15.813145 [debug]: Finished rendering [  0.09s] seed main_raw.ravenstack_feature_usage [success]
+09:23:15.813172 [info ]: Finished rendering [  0.09s] (16 nodes, 0 skipped, 0 errors)
+09:23:15.813199 [debug]: Started analyzing seed main_raw.ravenstack_feature_usage
+09:23:15.813234 [info ]:  Succeeded [  0.09s] seed  main_raw.ravenstack_feature_usage (table)
+09:23:15.813245 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_feature_usage [success]
+09:23:15.880089 [error]: dbt0209: No function generate_series
+  --> models\marts\dim_date.sql:7:13
+09:23:15.880844 [info ]:     Failed [  0.16s] model main_marts.dim_date (table)
+09:23:15.880873 [debug]: Finished analyzing [  0.12s] model main_marts.dim_date [error]
+09:23:15.880880 [info ]: Finished analyzing [  0.12s] (6 nodes, 0 skipped, 1 errors)
+09:23:15.896544 [info ]: Cached model count updated: 11 models (accurate)
+09:24:34.972697 [info ]: Started loading project
+09:24:34.973387 [info ]: Loading profiles.yml
+09:24:34.988991 [info ]: Started parsing
+09:24:35.004495 [info ]: Finished loading project [  0.03s]
+09:24:35.004998 [debug]: Finished parsing models\marts\_marts_models.yml [  0.00s]
+09:24:35.006994 [debug]: Finished parsing models\marts\dim_account.sql [  0.00s]
+09:24:35.007710 [debug]: Finished parsing models\marts\dim_date.sql [  0.00s]
+09:24:35.008276 [debug]: Finished parsing models\marts\dim_plan.sql [  0.00s]
+09:24:35.008744 [debug]: Finished parsing models\marts\fct_churn.sql [  0.00s]
+09:24:35.009203 [debug]: Finished parsing models\marts\fct_feature_usage.sql [  0.00s]
+09:24:35.015513 [debug]: Finished parsing models\marts\fct_subscriptions.sql [  0.01s]
+09:24:35.016037 [debug]: Finished parsing target\generic_tests\unique_dim_account_account_key.sql [  0.00s]
+09:24:35.016446 [debug]: Finished parsing target\generic_tests\not_null_dim_account_account_key.sql [  0.00s]
+09:24:35.016768 [debug]: Finished parsing target\generic_tests\unique_dim_date_date_key.sql [  0.00s]
+09:24:35.017103 [debug]: Finished parsing target\generic_tests\not_null_dim_date_date_key.sql [  0.00s]
+09:24:35.017507 [debug]: Finished parsing target\generic_tests\unique_dim_plan_plan_key.sql [  0.00s]
+09:24:35.017875 [debug]: Finished parsing target\generic_tests\not_null_dim_plan_plan_key.sql [  0.00s]
+09:24:35.018176 [debug]: Finished parsing target\generic_tests\unique_fct_churn_churn_key.sql [  0.00s]
+09:24:35.018552 [debug]: Finished parsing target\generic_tests\not_null_fct_churn_churn_key.sql [  0.00s]
+09:24:35.018882 [debug]: Finished parsing target\generic_tests\unique_fct_feature_usage_usage_key.sql [  0.00s]
+09:24:35.019222 [debug]: Finished parsing target\generic_tests\not_null_fct_feature_usage_usage_key.sql [  0.00s]
+09:24:35.019520 [debug]: Finished parsing target\generic_tests\unique_fct_subscriptions_subscription_key.sql [  0.00s]
+09:24:35.022473 [debug]: Finished parsing target\generic_tests\not_null_fct_subscriptions_subscription_key.sql [  0.00s]
+09:24:35.024044 [info ]: Finished parsing [  0.04s]
+09:24:35.027433 [info ]: Cached model count updated: 11 models (estimate)
+09:24:35.027451 [info ]: Cached model count updated: 11 models (accurate)
+09:24:35.027803 [info ]: Started scheduling
+09:24:35.030048 [info ]: Finished scheduling [  0.00s]
+09:24:35.030321 [debug]: Incremental compilation - 1 nodes selected: {"model.dbt_ravenstack.dim_date"}
+09:24:35.031628 [info ]: Started deferring state
+09:24:35.031642 [info ]: Finished deferring state [  0.00s]
+09:24:35.031914 [info ]: Started downloading schemas
+09:24:35.031941 [debug]:    Started downloading relations
+09:24:35.031957 [debug]:   Finished [  0.00s] downloading relations
+09:24:35.031996 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_feature_usage', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_feature_usage_usage_id.9c1e8123ff' and 1 others: Catalog Error: Table with name ravenstack_feature_usage does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+                 ^
+09:24:35.032015 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_subscriptions', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_subscriptions_account_id.a055a4d6a9' and 2 others: Catalog Error: Table with name ravenstack_subscriptions does not exist!
+Did you mean "main.duckdb_constraints"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+                 ^
+09:24:35.032023 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_accounts'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_accounts', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_accounts_account_id.2b7b8f7712' and 1 others: Catalog Error: Table with name ravenstack_accounts does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+                 ^
+09:24:35.032030 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_churn_events', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_churn_events_churn_event_id.99d64a7b74' and 1 others: Catalog Error: Table with name ravenstack_churn_events does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+                 ^
+09:24:35.032036 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_support_tickets', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_support_tickets_ticket_id.6ba0efb0de' and 1 others: Catalog Error: Table with name ravenstack_support_tickets does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+                 ^
+09:24:35.161772 [info ]: Started building task graph
+09:24:35.161847 [info ]: Finished building task graph [  0.00s]
+09:24:35.163163 [info ]: Started rendering (1 nodes)
+09:24:35.163180 [info ]: Started model main_marts.dim_date
+09:24:35.163190 [debug]: Started rendering model main_marts.dim_date
+09:24:35.163241 [info ]: Finished downloading schemas [  0.13s]
+09:24:35.165118 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_date at target\.lsp\compiled\models\marts\dim_date.sql
+09:24:35.165217 [info ]: Started analyzing (1 nodes)
+09:24:35.165224 [debug]: Started analyzing model main_marts.dim_date
+09:24:35.165268 [debug]: Finished rendering [  0.00s] model main_marts.dim_date [success]
+09:24:35.165279 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+09:24:35.206535 [error]: dbt0251: Recursive CTEs must have column aliases
+  --> models\marts\dim_date.sql:4:16
+09:24:35.207403 [info ]:     Failed [  0.04s] model main_marts.dim_date (table)
+09:24:35.207426 [debug]: Finished analyzing [  0.04s] model main_marts.dim_date [error]
+09:24:35.207432 [info ]: Finished analyzing [  0.04s] (1 nodes, 0 skipped, 1 errors)
+09:24:35.216185 [info ]: Cached model count updated: 11 models (accurate)
+09:25:17.248624 [info ]: Started loading project
+09:25:17.249166 [info ]: Loading profiles.yml
+09:25:17.253344 [info ]: Started parsing
+09:25:17.268871 [info ]: Finished loading project [  0.02s]
+09:25:17.271516 [debug]: Finished parsing models\staging\stg_accounts.sql [  0.00s]
+09:25:17.271833 [info ]: Finished parsing [  0.02s]
+09:25:17.273048 [info ]: Cached model count updated: 11 models (estimate)
+09:25:17.273073 [info ]: Cached model count updated: 11 models (accurate)
+09:25:17.273139 [info ]: Started scheduling
+09:25:17.273324 [info ]: Finished scheduling [  0.00s]
+09:25:17.273335 [debug]: Incremental compilation - 5 nodes selected: {"model.dbt_ravenstack.dim_account", "model.dbt_ravenstack.fct_churn", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_accounts"}
+09:25:17.273743 [info ]: Started deferring state
+09:25:17.273754 [info ]: Finished deferring state [  0.00s]
+09:25:17.274045 [info ]: Started downloading schemas
+09:25:17.279833 [debug]:    Started downloading relations
+09:25:17.279872 [debug]:   Finished [  0.00s] downloading relations
+09:25:17.279914 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_feature_usage', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_feature_usage_usage_id.9c1e8123ff' and 1 others: Catalog Error: Table with name ravenstack_feature_usage does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+                 ^
+09:25:17.279931 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_subscriptions', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_subscriptions_account_id.a055a4d6a9' and 2 others: Catalog Error: Table with name ravenstack_subscriptions does not exist!
+Did you mean "main.duckdb_constraints"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+                 ^
+09:25:17.279940 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_accounts'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_accounts', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_accounts_account_id.2b7b8f7712' and 1 others: Catalog Error: Table with name ravenstack_accounts does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+                 ^
+09:25:17.279948 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_churn_events', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_churn_events_churn_event_id.99d64a7b74' and 1 others: Catalog Error: Table with name ravenstack_churn_events does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+                 ^
+09:25:17.279955 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_support_tickets', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_support_tickets_ticket_id.6ba0efb0de' and 1 others: Catalog Error: Table with name ravenstack_support_tickets does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+                 ^
+09:25:17.303723 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."main_staging"."stg_churn_events"
+09:25:17.303723 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."main_marts"."dim_plan"
+09:25:18.305261 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."main_staging"."stg_feature_usage"
+09:25:18.305268 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."main_staging"."stg_subscriptions"
+09:25:18.316951 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."main_staging"."stg_support_tickets"
+09:25:19.317455 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_plan'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions', 'test.dbt_ravenstack.not_null_dim_plan_plan_key.d6964559f1' and 1 others: Catalog Error: Table with name dim_plan does not exist!
+Did you mean "pg_catalog.pg_namespace"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_plan"
+                 ^
+09:25:19.317489 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account', 'model.dbt_ravenstack.fct_churn': Catalog Error: Table with name stg_churn_events does not exist!
+Did you mean "main_raw.ravenstack_churn_events"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_churn_events"
+                 ^
+09:25:19.317500 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage': Catalog Error: Table with name stg_feature_usage does not exist!
+Did you mean "information_schema.constraint_column_usage"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_feature_usage"
+                 ^
+09:25:19.317511 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions': Catalog Error: Table with name stg_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_subscriptions"
+                 ^
+09:25:19.317519 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account': Catalog Error: Table with name stg_support_tickets does not exist!
+Did you mean "main_raw.ravenstack_support_tickets"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_support_tickets"
+                 ^
+09:25:19.454328 [info ]: Started building task graph
+09:25:19.454443 [info ]: Finished building task graph [  0.00s]
+09:25:19.454653 [info ]: Started rendering (5 nodes)
+09:25:19.454669 [info ]: Started model main_marts.fct_feature_usage
+09:25:19.454682 [debug]: Started rendering model main_marts.fct_feature_usage
+09:25:19.454702 [info ]: Started model main_marts.fct_subscriptions
+09:25:19.454707 [debug]: Started rendering model main_marts.fct_subscriptions
+09:25:19.454714 [info ]: Started model main_marts.fct_churn
+09:25:19.454718 [debug]: Started rendering model main_marts.fct_churn
+09:25:19.454724 [info ]: Started model main_staging.stg_accounts
+09:25:19.454729 [debug]: Started rendering model main_staging.stg_accounts
+09:25:19.454849 [info ]: Finished downloading schemas [  2.18s]
+09:25:19.456179 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_accounts at target\.lsp\compiled\models\staging\stg_accounts.sql
+09:25:19.456225 [info ]: Started analyzing (1 nodes)
+09:25:19.456232 [debug]: Started analyzing model main_staging.stg_accounts
+09:25:19.456400 [debug]: Finished rendering [  0.00s] model main_staging.stg_accounts [success]
+09:25:19.463883 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:25:19.463919 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:25:19.463942 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+09:25:19.463949 [info ]:  Succeeded [  0.01s] model main_marts.fct_subscriptions (table)
+09:25:19.463968 [debug]: Finished rendering [  0.01s] model main_marts.fct_subscriptions [success]
+09:25:19.463980 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+09:25:19.463985 [debug]: Finished rendering [  0.01s] model main_marts.fct_feature_usage [success]
+09:25:19.463991 [info ]:  Succeeded [  0.01s] model main_marts.fct_churn (table)
+09:25:19.463995 [debug]: Finished rendering [  0.01s] model main_marts.fct_churn [success]
+09:25:19.477971 [info ]:  Succeeded [  0.02s] model main_staging.stg_accounts (view)
+09:25:19.477997 [debug]: Finished analyzing [  0.02s] model main_staging.stg_accounts [success]
+09:25:19.478004 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+09:25:19.478022 [info ]: Started model main_marts.dim_account
+09:25:19.478033 [debug]: Started rendering model main_marts.dim_account
+09:25:19.478384 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+09:25:19.478426 [info ]:  Succeeded [-------] model main_marts.dim_account (table)
+09:25:19.478442 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+09:25:19.478447 [info ]: Finished rendering [  0.02s] (5 nodes, 0 skipped, 0 errors)
+09:25:19.487082 [info ]: Cached model count updated: 11 models (accurate)
+09:25:20.059760 [info ]: Started loading project
+09:25:20.060369 [info ]: Loading profiles.yml
+09:25:20.064230 [info ]: Started parsing
+09:25:20.079924 [info ]: Finished loading project [  0.02s]
+09:25:20.082265 [debug]: Finished parsing models\staging\stg_subscriptions.sql [  0.00s]
+09:25:20.082647 [info ]: Finished parsing [  0.02s]
+09:25:20.083910 [info ]: Cached model count updated: 11 models (estimate)
+09:25:20.083920 [info ]: Cached model count updated: 11 models (accurate)
+09:25:20.083970 [info ]: Started scheduling
+09:25:20.084123 [info ]: Finished scheduling [  0.00s]
+09:25:20.084135 [debug]: Incremental compilation - 4 nodes selected: {"model.dbt_ravenstack.dim_plan", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_subscriptions"}
+09:25:20.084499 [info ]: Started deferring state
+09:25:20.084514 [info ]: Finished deferring state [  0.00s]
+09:25:20.084764 [info ]: Started downloading schemas
+09:25:20.084803 [debug]:    Started downloading relations
+09:25:20.084819 [debug]:   Finished [  0.00s] downloading relations
+09:25:20.084841 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions': Catalog Error: Table with name stg_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_subscriptions"
+                 ^
+09:25:20.084859 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_subscriptions', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_subscriptions_account_id.a055a4d6a9' and 2 others: Catalog Error: Table with name ravenstack_subscriptions does not exist!
+Did you mean "main.duckdb_constraints"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+                 ^
+09:25:20.084866 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_plan'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions', 'test.dbt_ravenstack.not_null_dim_plan_plan_key.d6964559f1' and 1 others: Catalog Error: Table with name dim_plan does not exist!
+Did you mean "pg_catalog.pg_namespace"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_plan"
+                 ^
+09:25:20.084870 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account', 'model.dbt_ravenstack.fct_churn': Catalog Error: Table with name stg_churn_events does not exist!
+Did you mean "main_raw.ravenstack_churn_events"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_churn_events"
+                 ^
+09:25:20.084877 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account': Catalog Error: Table with name stg_support_tickets does not exist!
+Did you mean "main_raw.ravenstack_support_tickets"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_support_tickets"
+                 ^
+09:25:20.084881 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage': Catalog Error: Table with name stg_feature_usage does not exist!
+Did you mean "information_schema.constraint_column_usage"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_feature_usage"
+                 ^
+09:25:20.084888 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_feature_usage', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_feature_usage_usage_id.9c1e8123ff' and 1 others: Catalog Error: Table with name ravenstack_feature_usage does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+                 ^
+09:25:20.084893 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_accounts'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_accounts', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_accounts_account_id.2b7b8f7712' and 1 others: Catalog Error: Table with name ravenstack_accounts does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+                 ^
+09:25:20.084899 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_churn_events', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_churn_events_churn_event_id.99d64a7b74' and 1 others: Catalog Error: Table with name ravenstack_churn_events does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+                 ^
+09:25:20.084903 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_support_tickets', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_support_tickets_ticket_id.6ba0efb0de' and 1 others: Catalog Error: Table with name ravenstack_support_tickets does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+                 ^
+09:25:20.101963 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."main_marts"."dim_account"
+09:25:21.103678 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_account'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_churn', 'model.dbt_ravenstack.fct_subscriptions' and 2 others: Catalog Error: Table with name dim_account does not exist!
+Did you mean "main.duckdb_columns"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_account"
+                 ^
+09:25:21.242297 [info ]: Started building task graph
+09:25:21.242397 [info ]: Finished building task graph [  0.00s]
+09:25:21.242527 [info ]: Started rendering (4 nodes)
+09:25:21.242545 [info ]: Started model main_marts.fct_feature_usage
+09:25:21.242554 [debug]: Started rendering model main_marts.fct_feature_usage
+09:25:21.242574 [info ]: Started model main_marts.fct_subscriptions
+09:25:21.242579 [debug]: Started rendering model main_marts.fct_subscriptions
+09:25:21.242589 [info ]: Started model main_marts.dim_plan
+09:25:21.242606 [debug]: Started rendering model main_marts.dim_plan
+09:25:21.242612 [info ]: Started model main_staging.stg_subscriptions
+09:25:21.242615 [debug]: Started rendering model main_staging.stg_subscriptions
+09:25:21.242741 [info ]: Finished downloading schemas [  1.16s]
+09:25:21.243132 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:25:21.243130 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_plan at target\.lsp\compiled\models\marts\dim_plan.sql
+09:25:21.243172 [info ]:  Succeeded [-------] model main_marts.fct_subscriptions (table)
+09:25:21.243185 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+09:25:21.243196 [info ]:  Succeeded [-------] model main_marts.dim_plan (table)
+09:25:21.243195 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:25:21.243201 [debug]: Finished rendering [  0.00s] model main_marts.dim_plan [success]
+09:25:21.243224 [info ]:  Succeeded [-------] model main_marts.fct_feature_usage (table)
+09:25:21.243238 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+09:25:21.244113 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_subscriptions at target\.lsp\compiled\models\staging\stg_subscriptions.sql
+09:25:21.244161 [info ]:  Succeeded [  0.00s] model main_staging.stg_subscriptions (view)
+09:25:21.244178 [debug]: Finished rendering [  0.00s] model main_staging.stg_subscriptions [success]
+09:25:21.244184 [info ]: Finished rendering [  0.00s] (4 nodes, 0 skipped, 0 errors)
+09:25:21.254184 [info ]: Cached model count updated: 11 models (accurate)
+09:25:23.062230 [info ]: Started loading project
+09:25:23.062790 [info ]: Loading profiles.yml
+09:25:23.067065 [info ]: Started parsing
+09:25:23.082707 [info ]: Finished loading project [  0.02s]
+09:25:23.085796 [debug]: Finished parsing models\staging\stg_feature_usage.sql [  0.00s]
+09:25:23.086385 [info ]: Finished parsing [  0.02s]
+09:25:23.087769 [info ]: Cached model count updated: 11 models (estimate)
+09:25:23.087783 [info ]: Cached model count updated: 11 models (accurate)
+09:25:23.087848 [info ]: Started scheduling
+09:25:23.087992 [info ]: Finished scheduling [  0.00s]
+09:25:23.088002 [debug]: Incremental compilation - 2 nodes selected: {"model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.stg_feature_usage"}
+09:25:23.088460 [info ]: Started deferring state
+09:25:23.088472 [info ]: Finished deferring state [  0.00s]
+09:25:23.088730 [info ]: Started downloading schemas
+09:25:23.088773 [debug]:    Started downloading relations
+09:25:23.088788 [debug]:   Finished [  0.00s] downloading relations
+09:25:23.088806 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions': Catalog Error: Table with name stg_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_subscriptions"
+                 ^
+09:25:23.088823 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_subscriptions', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_subscriptions_account_id.a055a4d6a9' and 2 others: Catalog Error: Table with name ravenstack_subscriptions does not exist!
+Did you mean "main.duckdb_constraints"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+                 ^
+09:25:23.088828 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_plan'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions', 'test.dbt_ravenstack.not_null_dim_plan_plan_key.d6964559f1' and 1 others: Catalog Error: Table with name dim_plan does not exist!
+Did you mean "pg_catalog.pg_namespace"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_plan"
+                 ^
+09:25:23.088833 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account', 'model.dbt_ravenstack.fct_churn': Catalog Error: Table with name stg_churn_events does not exist!
+Did you mean "main_raw.ravenstack_churn_events"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_churn_events"
+                 ^
+09:25:23.088838 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account': Catalog Error: Table with name stg_support_tickets does not exist!
+Did you mean "main_raw.ravenstack_support_tickets"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_support_tickets"
+                 ^
+09:25:23.088841 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_account'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_churn', 'model.dbt_ravenstack.fct_subscriptions' and 2 others: Catalog Error: Table with name dim_account does not exist!
+Did you mean "main.duckdb_columns"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_account"
+                 ^
+09:25:23.088845 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage': Catalog Error: Table with name stg_feature_usage does not exist!
+Did you mean "information_schema.constraint_column_usage"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_feature_usage"
+                 ^
+09:25:23.088851 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_feature_usage', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_feature_usage_usage_id.9c1e8123ff' and 1 others: Catalog Error: Table with name ravenstack_feature_usage does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+                 ^
+09:25:23.088867 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_accounts'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_accounts', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_accounts_account_id.2b7b8f7712' and 1 others: Catalog Error: Table with name ravenstack_accounts does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+                 ^
+09:25:23.088876 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_churn_events', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_churn_events_churn_event_id.99d64a7b74' and 1 others: Catalog Error: Table with name ravenstack_churn_events does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+                 ^
+09:25:23.088882 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_support_tickets', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_support_tickets_ticket_id.6ba0efb0de' and 1 others: Catalog Error: Table with name ravenstack_support_tickets does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+                 ^
+09:25:23.107494 [debug]: Query executed on node unknown:
+DESCRIBE "ravenstack"."main_marts"."fct_subscriptions"
+09:25:24.108017 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.fct_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage', 'test.dbt_ravenstack.not_null_fct_subscriptions_subscription_key.4aa131c4de' and 1 others: Catalog Error: Table with name fct_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."fct_subscriptions"
+                 ^
+09:25:24.240130 [info ]: Started building task graph
+09:25:24.240208 [info ]: Finished building task graph [  0.00s]
+09:25:24.240311 [info ]: Started rendering (2 nodes)
+09:25:24.240325 [info ]: Started model main_marts.fct_feature_usage
+09:25:24.240335 [debug]: Started rendering model main_marts.fct_feature_usage
+09:25:24.240352 [info ]: Started model main_staging.stg_feature_usage
+09:25:24.240358 [debug]: Started rendering model main_staging.stg_feature_usage
+09:25:24.240407 [info ]: Finished downloading schemas [  1.15s]
+09:25:24.240966 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:25:24.241018 [info ]:  Succeeded [-------] model main_marts.fct_feature_usage (table)
+09:25:24.241060 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+09:25:24.242013 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_feature_usage at target\.lsp\compiled\models\staging\stg_feature_usage.sql
+09:25:24.242062 [info ]:  Succeeded [  0.00s] model main_staging.stg_feature_usage (view)
+09:25:24.242159 [debug]: Finished rendering [  0.00s] model main_staging.stg_feature_usage [success]
+09:25:24.242169 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+09:25:24.257420 [info ]: Cached model count updated: 11 models (accurate)
+09:25:26.755999 [info ]: Started loading project
+09:25:26.756556 [info ]: Loading profiles.yml
+09:25:26.760723 [info ]: Started parsing
+09:25:26.775354 [info ]: Finished loading project [  0.02s]
+09:25:26.777867 [debug]: Finished parsing models\staging\stg_support_tickets.sql [  0.00s]
+09:25:26.778487 [info ]: Finished parsing [  0.02s]
+09:25:26.780013 [info ]: Cached model count updated: 11 models (estimate)
+09:25:26.780027 [info ]: Cached model count updated: 11 models (accurate)
+09:25:26.780093 [info ]: Started scheduling
+09:25:26.780279 [info ]: Finished scheduling [  0.00s]
+09:25:26.780293 [debug]: Incremental compilation - 5 nodes selected: {"model.dbt_ravenstack.dim_account", "model.dbt_ravenstack.fct_churn", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_support_tickets"}
+09:25:26.780746 [info ]: Started deferring state
+09:25:26.780756 [info ]: Finished deferring state [  0.00s]
+09:25:26.781066 [info ]: Started downloading schemas
+09:25:26.781118 [debug]:    Started downloading relations
+09:25:26.781134 [debug]:   Finished [  0.00s] downloading relations
+09:25:26.781154 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions': Catalog Error: Table with name stg_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_subscriptions"
+                 ^
+09:25:26.781174 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_subscriptions', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_subscriptions_account_id.a055a4d6a9' and 2 others: Catalog Error: Table with name ravenstack_subscriptions does not exist!
+Did you mean "main.duckdb_constraints"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+                 ^
+09:25:26.781180 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_plan'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions', 'test.dbt_ravenstack.not_null_dim_plan_plan_key.d6964559f1' and 1 others: Catalog Error: Table with name dim_plan does not exist!
+Did you mean "pg_catalog.pg_namespace"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_plan"
+                 ^
+09:25:26.781186 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account', 'model.dbt_ravenstack.fct_churn': Catalog Error: Table with name stg_churn_events does not exist!
+Did you mean "main_raw.ravenstack_churn_events"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_churn_events"
+                 ^
+09:25:26.781190 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account': Catalog Error: Table with name stg_support_tickets does not exist!
+Did you mean "main_raw.ravenstack_support_tickets"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_support_tickets"
+                 ^
+09:25:26.781195 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_account'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_churn', 'model.dbt_ravenstack.fct_subscriptions' and 2 others: Catalog Error: Table with name dim_account does not exist!
+Did you mean "main.duckdb_columns"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_account"
+                 ^
+09:25:26.781199 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage': Catalog Error: Table with name stg_feature_usage does not exist!
+Did you mean "information_schema.constraint_column_usage"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_feature_usage"
+                 ^
+09:25:26.781220 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_feature_usage', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_feature_usage_usage_id.9c1e8123ff' and 1 others: Catalog Error: Table with name ravenstack_feature_usage does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+                 ^
+09:25:26.781231 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_accounts'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_accounts', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_accounts_account_id.2b7b8f7712' and 1 others: Catalog Error: Table with name ravenstack_accounts does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+                 ^
+09:25:26.781237 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_churn_events', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_churn_events_churn_event_id.99d64a7b74' and 1 others: Catalog Error: Table with name ravenstack_churn_events does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+                 ^
+09:25:26.781242 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_support_tickets', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_support_tickets_ticket_id.6ba0efb0de' and 1 others: Catalog Error: Table with name ravenstack_support_tickets does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+                 ^
+09:25:26.781246 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.fct_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage', 'test.dbt_ravenstack.not_null_fct_subscriptions_subscription_key.4aa131c4de' and 1 others: Catalog Error: Table with name fct_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."fct_subscriptions"
+                 ^
+09:25:26.916861 [info ]: Started building task graph
+09:25:26.916969 [info ]: Finished building task graph [  0.00s]
+09:25:26.917153 [info ]: Started rendering (5 nodes)
+09:25:26.917168 [info ]: Started model main_marts.fct_feature_usage
+09:25:26.917176 [debug]: Started rendering model main_marts.fct_feature_usage
+09:25:26.917198 [info ]: Started model main_marts.fct_subscriptions
+09:25:26.917204 [debug]: Started rendering model main_marts.fct_subscriptions
+09:25:26.917213 [info ]: Started model main_marts.fct_churn
+09:25:26.917218 [debug]: Started rendering model main_marts.fct_churn
+09:25:26.917229 [info ]: Started model main_marts.dim_account
+09:25:26.917239 [debug]: Started rendering model main_marts.dim_account
+09:25:26.917251 [info ]: Started model main_staging.stg_support_tickets
+09:25:26.917259 [debug]: Started rendering model main_staging.stg_support_tickets
+09:25:26.917280 [info ]: Finished downloading schemas [  0.14s]
+09:25:26.917836 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+09:25:26.917882 [info ]:  Succeeded [-------] model main_marts.fct_churn (table)
+09:25:26.917898 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+09:25:26.917945 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+09:25:26.917957 [info ]:  Succeeded [-------] model main_marts.dim_account (table)
+09:25:26.917974 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+09:25:26.917995 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:25:26.918012 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:25:26.918034 [info ]:  Succeeded [-------] model main_marts.fct_feature_usage (table)
+09:25:26.918049 [info ]:  Succeeded [-------] model main_marts.fct_subscriptions (table)
+09:25:26.918055 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+09:25:26.918083 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+09:25:26.918848 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_support_tickets at target\.lsp\compiled\models\staging\stg_support_tickets.sql
+09:25:26.918900 [info ]:  Succeeded [  0.00s] model main_staging.stg_support_tickets (view)
+09:25:26.918946 [debug]: Finished rendering [  0.00s] model main_staging.stg_support_tickets [success]
+09:25:26.918958 [info ]: Finished rendering [  0.00s] (5 nodes, 0 skipped, 0 errors)
+09:25:26.923061 [info ]: Cached model count updated: 11 models (accurate)
+09:25:28.771520 [info ]: Started loading project
+09:25:28.772167 [info ]: Loading profiles.yml
+09:25:28.775866 [info ]: Started parsing
+09:25:28.790893 [info ]: Finished loading project [  0.02s]
+09:25:28.793515 [debug]: Finished parsing models\staging\stg_churn_events.sql [  0.00s]
+09:25:28.794044 [info ]: Finished parsing [  0.02s]
+09:25:28.795251 [info ]: Cached model count updated: 11 models (estimate)
+09:25:28.795261 [info ]: Cached model count updated: 11 models (accurate)
+09:25:28.795321 [info ]: Started scheduling
+09:25:28.795679 [info ]: Finished scheduling [  0.00s]
+09:25:28.795694 [debug]: Incremental compilation - 5 nodes selected: {"model.dbt_ravenstack.dim_account", "model.dbt_ravenstack.fct_churn", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_churn_events"}
+09:25:28.796059 [info ]: Started deferring state
+09:25:28.796071 [info ]: Finished deferring state [  0.00s]
+09:25:28.796336 [info ]: Started downloading schemas
+09:25:28.796378 [debug]:    Started downloading relations
+09:25:28.796391 [debug]:   Finished [  0.00s] downloading relations
+09:25:28.796408 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions': Catalog Error: Table with name stg_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_subscriptions"
+                 ^
+09:25:28.796425 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_subscriptions', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_subscriptions_account_id.a055a4d6a9' and 2 others: Catalog Error: Table with name ravenstack_subscriptions does not exist!
+Did you mean "main.duckdb_constraints"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_subscriptions"
+                 ^
+09:25:28.796433 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_plan'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_subscriptions', 'test.dbt_ravenstack.not_null_dim_plan_plan_key.d6964559f1' and 1 others: Catalog Error: Table with name dim_plan does not exist!
+Did you mean "pg_catalog.pg_namespace"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_plan"
+                 ^
+09:25:28.796437 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account', 'model.dbt_ravenstack.fct_churn': Catalog Error: Table with name stg_churn_events does not exist!
+Did you mean "main_raw.ravenstack_churn_events"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_churn_events"
+                 ^
+09:25:28.796442 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.dim_account': Catalog Error: Table with name stg_support_tickets does not exist!
+Did you mean "main_raw.ravenstack_support_tickets"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_support_tickets"
+                 ^
+09:25:28.796446 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.dim_account'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_churn', 'model.dbt_ravenstack.fct_subscriptions' and 2 others: Catalog Error: Table with name dim_account does not exist!
+Did you mean "main.duckdb_columns"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."dim_account"
+                 ^
+09:25:28.796450 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.stg_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage': Catalog Error: Table with name stg_feature_usage does not exist!
+Did you mean "information_schema.constraint_column_usage"?
+
+LINE 1: DESCRIBE "ravenstack"."main_staging"."stg_feature_usage"
+                 ^
+09:25:28.796456 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_feature_usage'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_feature_usage', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_feature_usage_usage_id.9c1e8123ff' and 1 others: Catalog Error: Table with name ravenstack_feature_usage does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_feature_usage"
+                 ^
+09:25:28.796463 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_accounts'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_accounts', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_accounts_account_id.2b7b8f7712' and 1 others: Catalog Error: Table with name ravenstack_accounts does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_accounts"
+                 ^
+09:25:28.796469 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_churn_events'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_churn_events', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_churn_events_churn_event_id.99d64a7b74' and 1 others: Catalog Error: Table with name ravenstack_churn_events does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_churn_events"
+                 ^
+09:25:28.796476 [warn ]: dbt1014: Failed to download source schema for 'source.dbt_ravenstack.raw.ravenstack_support_tickets'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.stg_support_tickets', 'test.dbt_ravenstack.source_not_null_raw_ravenstack_support_tickets_ticket_id.6ba0efb0de' and 1 others: Catalog Error: Table with name ravenstack_support_tickets does not exist!
+Did you mean "information_schema.character_sets"?
+
+LINE 1: DESCRIBE "ravenstack"."raw"."ravenstack_support_tickets"
+                 ^
+09:25:28.796480 [warn ]: dbt1014: Failed to download model schema for 'model.dbt_ravenstack.fct_subscriptions'. Setting 'static_analysis' to off. Skipping analysis for 'model.dbt_ravenstack.fct_feature_usage', 'test.dbt_ravenstack.not_null_fct_subscriptions_subscription_key.4aa131c4de' and 1 others: Catalog Error: Table with name fct_subscriptions does not exist!
+Did you mean "pg_catalog.pg_description"?
+
+LINE 1: DESCRIBE "ravenstack"."main_marts"."fct_subscriptions"
+                 ^
+09:25:28.929656 [info ]: Started building task graph
+09:25:28.929745 [info ]: Finished building task graph [  0.00s]
+09:25:28.929860 [info ]: Started rendering (5 nodes)
+09:25:28.929874 [info ]: Started model main_marts.fct_feature_usage
+09:25:28.929884 [debug]: Started rendering model main_marts.fct_feature_usage
+09:25:28.930039 [info ]: Finished downloading schemas [  0.13s]
+09:25:28.937490 [info ]: Started model main_marts.fct_subscriptions
+09:25:28.937662 [debug]: Started rendering model main_marts.fct_subscriptions
+09:25:28.937708 [info ]: Started model main_marts.fct_churn
+09:25:28.937720 [debug]: Started rendering model main_marts.fct_churn
+09:25:28.937729 [info ]: Started model main_marts.dim_account
+09:25:28.937734 [debug]: Started rendering model main_marts.dim_account
+09:25:28.937750 [info ]: Started model main_staging.stg_churn_events
+09:25:28.937755 [debug]: Started rendering model main_staging.stg_churn_events
+09:25:28.938166 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+09:25:28.938182 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:25:28.938257 [info ]:  Succeeded [-------] model main_marts.fct_churn (table)
+09:25:28.938279 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+09:25:28.938307 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+09:25:28.938309 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+09:25:28.938329 [debug]: Finished rendering [  0.01s] model main_marts.fct_feature_usage [success]
+09:25:28.938348 [info ]:  Succeeded [-------] model main_marts.dim_account (table)
+09:25:28.938358 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+09:25:28.938456 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:25:28.938496 [info ]:  Succeeded [-------] model main_marts.fct_subscriptions (table)
+09:25:28.938516 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+09:25:28.939640 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_churn_events at target\.lsp\compiled\models\staging\stg_churn_events.sql
+09:25:28.939687 [info ]:  Succeeded [  0.00s] model main_staging.stg_churn_events (view)
+09:25:28.939711 [debug]: Finished rendering [  0.00s] model main_staging.stg_churn_events [success]
+09:25:28.939717 [info ]: Finished rendering [  0.01s] (5 nodes, 0 skipped, 0 errors)
+09:25:28.944446 [info ]: Cached model count updated: 11 models (accurate)
+09:26:04.664039 [info ]: Started loading project
+09:26:04.664873 [info ]: Loading profiles.yml
+09:26:04.669328 [info ]: Started loading project
+09:26:04.669683 [info ]: Loading profiles.yml
+09:26:04.669711 [info ]: Finished loading project [  0.01s]
+09:26:04.671897 [info ]: Loading packages.yml
+09:26:04.671961 [debug]:    Started loading packages
+09:26:04.676605 [debug]:     Loaded [  0.00s] packages
+09:26:04.677073 [info ]: Started parsing
+09:26:04.697835 [info ]: Finished loading project [  0.03s]
+09:26:04.701703 [debug]: Finished parsing models\marts\_marts_models.yml [  0.00s]
+09:26:04.705585 [debug]: Finished parsing models\marts\dim_account.sql [  0.00s]
+09:26:04.706158 [debug]: Finished parsing models\marts\dim_date.sql [  0.00s]
+09:26:04.707026 [debug]: Finished parsing models\marts\dim_plan.sql [  0.00s]
+09:26:04.707610 [debug]: Finished parsing models\marts\fct_churn.sql [  0.00s]
+09:26:04.708151 [debug]: Finished parsing models\marts\fct_feature_usage.sql [  0.00s]
+09:26:04.708643 [debug]: Finished parsing models\marts\fct_subscriptions.sql [  0.00s]
+09:26:04.708966 [debug]: Finished parsing models\staging\stg_accounts.sql [  0.00s]
+09:26:04.709360 [debug]: Finished parsing models\staging\stg_churn_events.sql [  0.00s]
+09:26:04.709648 [debug]: Finished parsing models\staging\stg_feature_usage.sql [  0.00s]
+09:26:04.709891 [debug]: Finished parsing models\staging\stg_subscriptions.sql [  0.00s]
+09:26:04.716281 [debug]: Finished parsing models\staging\stg_support_tickets.sql [  0.01s]
+09:26:04.716782 [debug]: Finished parsing target\generic_tests\unique_dim_account_account_key.sql [  0.00s]
+09:26:04.717181 [debug]: Finished parsing target\generic_tests\not_null_dim_account_account_key.sql [  0.00s]
+09:26:04.717593 [debug]: Finished parsing target\generic_tests\unique_dim_date_date_key.sql [  0.00s]
+09:26:04.717977 [debug]: Finished parsing target\generic_tests\not_null_dim_date_date_key.sql [  0.00s]
+09:26:04.718363 [debug]: Finished parsing target\generic_tests\unique_dim_plan_plan_key.sql [  0.00s]
+09:26:04.718718 [debug]: Finished parsing target\generic_tests\not_null_dim_plan_plan_key.sql [  0.00s]
+09:26:04.719080 [debug]: Finished parsing target\generic_tests\unique_fct_churn_churn_key.sql [  0.00s]
+09:26:04.719426 [debug]: Finished parsing target\generic_tests\not_null_fct_churn_churn_key.sql [  0.00s]
+09:26:04.719750 [debug]: Finished parsing target\generic_tests\unique_fct_feature_usage_usage_key.sql [  0.00s]
+09:26:04.720176 [debug]: Finished parsing target\generic_tests\not_null_fct_feature_usage_usage_key.sql [  0.00s]
+09:26:04.720606 [debug]: Finished parsing target\generic_tests\unique_fct_subscriptions_subscription_key.sql [  0.00s]
+09:26:04.723147 [debug]: Finished parsing target\generic_tests\not_null_fct_subscriptions_subscription_key.sql [  0.00s]
+09:26:04.723425 [info ]: Finished parsing [  0.05s]
+09:26:04.723862 [info ]: Cached model count updated: 11 models (estimate)
+09:26:04.723873 [info ]: Cached model count updated: 11 models (accurate)
+09:26:04.723963 [info ]: Started scheduling
+09:26:04.724193 [info ]: Finished scheduling [  0.00s]
+09:26:04.724216 [info ]: Started scheduling
+09:26:04.724310 [info ]: Finished scheduling [  0.00s]
+09:26:04.724831 [info ]: Started deferring state
+09:26:04.724843 [info ]: Finished deferring state [  0.00s]
+09:26:04.725151 [info ]: Started downloading schemas
+09:26:04.725179 [debug]:    Started downloading relations
+09:26:04.725198 [debug]:   Finished [  0.00s] downloading relations
+09:26:04.725210 [info ]: Finished downloading schemas [  0.00s]
+09:26:04.854686 [info ]: Started building task graph
+09:26:04.856438 [info ]: Finished building task graph [  0.00s]
+09:26:04.856614 [info ]: Started rendering (16 nodes)
+09:26:04.856630 [info ]: Started seed main_raw.ravenstack_feature_usage
+09:26:04.856638 [debug]: Started rendering seed main_raw.ravenstack_feature_usage
+09:26:04.856652 [info ]: Started seed main_raw.ravenstack_subscriptions
+09:26:04.856657 [debug]: Started rendering seed main_raw.ravenstack_subscriptions
+09:26:04.856669 [info ]: Started model main_marts.dim_date
+09:26:04.856673 [debug]: Started rendering model main_marts.dim_date
+09:26:04.856679 [info ]: Started seed main_raw.ravenstack_support_tickets
+09:26:04.856683 [debug]: Started rendering seed main_raw.ravenstack_support_tickets
+09:26:04.856688 [info ]: Started seed main_raw.ravenstack_churn_events
+09:26:04.856692 [debug]: Started rendering seed main_raw.ravenstack_churn_events
+09:26:04.856696 [info ]: Started seed main_raw.ravenstack_accounts
+09:26:04.856699 [debug]: Started rendering seed main_raw.ravenstack_accounts
+09:26:04.860537 [debug]: Finished rendering [  0.00s] seed main_raw.ravenstack_accounts [success]
+09:26:04.860578 [info ]: Started analyzing (16 nodes)
+09:26:04.860590 [debug]: Started analyzing seed main_raw.ravenstack_accounts
+09:26:04.860630 [info ]:  Succeeded [  0.00s] seed  main_raw.ravenstack_accounts (table)
+09:26:04.860647 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_accounts [success]
+09:26:04.860662 [info ]: Started model main_staging.stg_accounts
+09:26:04.860672 [debug]: Started rendering model main_staging.stg_accounts
+09:26:04.860810 [debug]: Finished rendering [  0.00s] seed main_raw.ravenstack_churn_events [success]
+09:26:04.860843 [debug]: Started analyzing seed main_raw.ravenstack_churn_events
+09:26:04.860867 [info ]:  Succeeded [  0.00s] seed  main_raw.ravenstack_churn_events (table)
+09:26:04.860895 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_churn_events [success]
+09:26:04.860908 [info ]: Started model main_staging.stg_churn_events
+09:26:04.860919 [debug]: Started rendering model main_staging.stg_churn_events
+09:26:04.861704 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_date at target\.lsp\compiled\models\marts\dim_date.sql
+09:26:04.861809 [debug]: Finished rendering [  0.01s] model main_marts.dim_date [success]
+09:26:04.861838 [debug]: Started analyzing model main_marts.dim_date
+09:26:04.862598 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_accounts at target\.lsp\compiled\models\staging\stg_accounts.sql
+09:26:04.862639 [debug]: Started analyzing model main_staging.stg_accounts
+09:26:04.862915 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_churn_events at target\.lsp\compiled\models\staging\stg_churn_events.sql
+09:26:04.862927 [debug]: Finished rendering [  0.00s] model main_staging.stg_accounts [success]
+09:26:04.862948 [debug]: Finished rendering [  0.00s] model main_staging.stg_churn_events [success]
+09:26:04.862963 [debug]: Started analyzing model main_staging.stg_churn_events
+09:26:04.864261 [info ]:  Succeeded [  0.00s] model main_staging.stg_accounts (view)
+09:26:04.864288 [debug]: Finished analyzing [  0.00s] model main_staging.stg_accounts [success]
+09:26:04.865414 [debug]: Finished rendering [  0.01s] seed main_raw.ravenstack_support_tickets [success]
+09:26:04.865442 [debug]: Started analyzing seed main_raw.ravenstack_support_tickets
+09:26:04.865468 [info ]:  Succeeded [  0.01s] seed  main_raw.ravenstack_support_tickets (table)
+09:26:04.865477 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_support_tickets [success]
+09:26:04.865557 [error]: dbt0251: Recursive CTEs must have column aliases
+  --> models\marts\dim_date.sql:4:16
+09:26:04.865592 [info ]: Started model main_staging.stg_support_tickets
+09:26:04.865640 [debug]: Started rendering model main_staging.stg_support_tickets
+09:26:04.865664 [info ]:     Failed [  0.01s] model main_marts.dim_date (table)
+09:26:04.865727 [debug]: Finished analyzing [  0.00s] model main_marts.dim_date [error]
+09:26:04.867562 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_support_tickets at target\.lsp\compiled\models\staging\stg_support_tickets.sql
+09:26:04.867632 [debug]: Finished rendering [  0.00s] model main_staging.stg_support_tickets [success]
+09:26:04.867670 [debug]: Started analyzing model main_staging.stg_support_tickets
+09:26:04.870139 [info ]:  Succeeded [  0.01s] model main_staging.stg_churn_events (view)
+09:26:04.870170 [debug]: Finished analyzing [  0.01s] model main_staging.stg_churn_events [success]
+09:26:04.873067 [info ]:  Succeeded [  0.01s] model main_staging.stg_support_tickets (view)
+09:26:04.873180 [debug]: Finished analyzing [  0.01s] model main_staging.stg_support_tickets [success]
+09:26:04.873231 [info ]: Started model main_marts.dim_account
+09:26:04.873251 [debug]: Started rendering model main_marts.dim_account
+09:26:04.875997 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+09:26:04.876087 [debug]: Started analyzing model main_marts.dim_account
+09:26:04.876085 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+09:26:04.878047 [debug]: Finished rendering [  0.02s] seed main_raw.ravenstack_subscriptions [success]
+09:26:04.878082 [debug]: Started analyzing seed main_raw.ravenstack_subscriptions
+09:26:04.878111 [info ]:  Succeeded [  0.02s] seed  main_raw.ravenstack_subscriptions (table)
+09:26:04.878125 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_subscriptions [success]
+09:26:04.878135 [info ]: Started model main_staging.stg_subscriptions
+09:26:04.878141 [debug]: Started rendering model main_staging.stg_subscriptions
+09:26:04.880141 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_subscriptions at target\.lsp\compiled\models\staging\stg_subscriptions.sql
+09:26:04.880250 [debug]: Started analyzing model main_staging.stg_subscriptions
+09:26:04.880280 [debug]: Finished rendering [  0.00s] model main_staging.stg_subscriptions [success]
+09:26:04.884297 [info ]:  Succeeded [  0.01s] model main_staging.stg_subscriptions (view)
+09:26:04.884323 [debug]: Finished analyzing [  0.00s] model main_staging.stg_subscriptions [success]
+09:26:04.884345 [info ]: Started model main_marts.dim_plan
+09:26:04.884354 [debug]: Started rendering model main_marts.dim_plan
+09:26:04.886693 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_plan at target\.lsp\compiled\models\marts\dim_plan.sql
+09:26:04.886822 [debug]: Finished rendering [  0.00s] model main_marts.dim_plan [success]
+09:26:04.886886 [debug]: Started analyzing model main_marts.dim_plan
+09:26:04.909557 [info ]:  Succeeded [  0.02s] model main_marts.dim_plan (table)
+09:26:04.909587 [debug]: Finished analyzing [  0.02s] model main_marts.dim_plan [success]
+09:26:04.923615 [debug]: Finished rendering [  0.07s] seed main_raw.ravenstack_feature_usage [success]
+09:26:04.923653 [debug]: Started analyzing seed main_raw.ravenstack_feature_usage
+09:26:04.923687 [info ]:  Succeeded [  0.07s] seed  main_raw.ravenstack_feature_usage (table)
+09:26:04.923700 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_feature_usage [success]
+09:26:04.923712 [info ]: Started model main_staging.stg_feature_usage
+09:26:04.923720 [debug]: Started rendering model main_staging.stg_feature_usage
+09:26:04.923786 [info ]:  Succeeded [  0.05s] model main_marts.dim_account (table)
+09:26:04.923803 [debug]: Finished analyzing [  0.05s] model main_marts.dim_account [success]
+09:26:04.923816 [info ]: Started model main_marts.fct_churn
+09:26:04.923824 [debug]: Started rendering model main_marts.fct_churn
+09:26:04.923837 [info ]: Started model main_marts.fct_subscriptions
+09:26:04.923844 [debug]: Started rendering model main_marts.fct_subscriptions
+09:26:04.925139 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_feature_usage at target\.lsp\compiled\models\staging\stg_feature_usage.sql
+09:26:04.925223 [debug]: Started analyzing model main_staging.stg_feature_usage
+09:26:04.925244 [debug]: Finished rendering [  0.00s] model main_staging.stg_feature_usage [success]
+09:26:04.926099 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:26:04.926155 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+09:26:04.926168 [debug]: Started analyzing model main_marts.fct_subscriptions
+09:26:04.926168 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+09:26:04.926198 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+09:26:04.926212 [debug]: Started analyzing model main_marts.fct_churn
+09:26:04.927627 [info ]:  Succeeded [  0.00s] model main_staging.stg_feature_usage (view)
+09:26:04.927656 [debug]: Finished analyzing [  0.00s] model main_staging.stg_feature_usage [success]
+09:26:04.936207 [info ]:  Succeeded [  0.01s] model main_marts.fct_churn (table)
+09:26:04.936250 [debug]: Finished analyzing [  0.01s] model main_marts.fct_churn [success]
+09:26:04.954916 [info ]:  Succeeded [  0.03s] model main_marts.fct_subscriptions (table)
+09:26:04.954944 [debug]: Finished analyzing [  0.03s] model main_marts.fct_subscriptions [success]
+09:26:04.954966 [info ]: Started model main_marts.fct_feature_usage
+09:26:04.954976 [debug]: Started rendering model main_marts.fct_feature_usage
+09:26:04.957142 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:26:04.957212 [debug]: Started analyzing model main_marts.fct_feature_usage
+09:26:04.957281 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+09:26:04.957297 [info ]: Finished rendering [  0.10s] (16 nodes, 0 skipped, 0 errors)
+09:26:04.966099 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+09:26:04.966127 [debug]: Finished analyzing [  0.01s] model main_marts.fct_feature_usage [success]
+09:26:04.966133 [info ]: Finished analyzing [  0.11s] (16 nodes, 0 skipped, 1 errors)
+09:26:04.971474 [info ]: Cached model count updated: 11 models (accurate)
+09:26:54.152759 [info ]: Started loading project
+09:26:54.153424 [info ]: Loading profiles.yml
+09:26:54.157305 [info ]: Started parsing
+09:26:54.172159 [info ]: Finished loading project [  0.02s]
+09:26:54.175355 [debug]: Finished parsing models\staging\stg_subscriptions.sql [  0.00s]
+09:26:54.175740 [info ]: Finished parsing [  0.02s]
+09:26:54.176844 [info ]: Cached model count updated: 11 models (estimate)
+09:26:54.176854 [info ]: Cached model count updated: 11 models (accurate)
+09:26:54.176894 [info ]: Started scheduling
+09:26:54.177040 [info ]: Finished scheduling [  0.00s]
+09:26:54.177051 [debug]: Incremental compilation - 4 nodes selected: {"model.dbt_ravenstack.dim_plan", "model.dbt_ravenstack.fct_feature_usage", "model.dbt_ravenstack.fct_subscriptions", "model.dbt_ravenstack.stg_subscriptions"}
+09:26:54.177369 [info ]: Started deferring state
+09:26:54.177383 [info ]: Finished deferring state [  0.00s]
+09:26:54.177650 [info ]: Started downloading schemas
+09:26:54.177701 [debug]:    Started downloading relations
+09:26:54.177716 [debug]:   Finished [  0.00s] downloading relations
+09:26:54.177725 [info ]: Finished downloading schemas [  0.00s]
+09:26:54.308327 [info ]: Started building task graph
+09:26:54.308429 [info ]: Finished building task graph [  0.00s]
+09:26:54.308582 [info ]: Started rendering (4 nodes)
+09:26:54.308599 [info ]: Started model main_staging.stg_subscriptions
+09:26:54.308609 [debug]: Started rendering model main_staging.stg_subscriptions
+09:26:54.310198 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_subscriptions at target\.lsp\compiled\models\staging\stg_subscriptions.sql
+09:26:54.310244 [info ]: Started analyzing (4 nodes)
+09:26:54.310250 [debug]: Started analyzing model main_staging.stg_subscriptions
+09:26:54.310269 [debug]: Finished rendering [  0.00s] model main_staging.stg_subscriptions [success]
+09:26:54.313435 [info ]:  Succeeded [  0.00s] model main_staging.stg_subscriptions (view)
+09:26:54.313462 [debug]: Finished analyzing [  0.00s] model main_staging.stg_subscriptions [success]
+09:26:54.313479 [info ]: Started model main_marts.dim_plan
+09:26:54.313487 [debug]: Started rendering model main_marts.dim_plan
+09:26:54.313852 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_plan at target\.lsp\compiled\models\marts\dim_plan.sql
+09:26:54.313890 [debug]: Started analyzing model main_marts.dim_plan
+09:26:54.313967 [debug]: Finished rendering [  0.00s] model main_marts.dim_plan [success]
+09:26:54.316138 [info ]:  Succeeded [  0.00s] model main_marts.dim_plan (table)
+09:26:54.316162 [debug]: Finished analyzing [  0.00s] model main_marts.dim_plan [success]
+09:26:54.316179 [info ]: Started model main_marts.fct_subscriptions
+09:26:54.316188 [debug]: Started rendering model main_marts.fct_subscriptions
+09:26:54.316789 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:26:54.316822 [debug]: Started analyzing model main_marts.fct_subscriptions
+09:26:54.316888 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+09:26:54.327307 [info ]:  Succeeded [  0.01s] model main_marts.fct_subscriptions (table)
+09:26:54.327332 [debug]: Finished analyzing [  0.01s] model main_marts.fct_subscriptions [success]
+09:26:54.327351 [info ]: Started model main_marts.fct_feature_usage
+09:26:54.327359 [debug]: Started rendering model main_marts.fct_feature_usage
+09:26:54.327701 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:26:54.327738 [debug]: Started analyzing model main_marts.fct_feature_usage
+09:26:54.327755 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+09:26:54.327768 [info ]: Finished rendering [  0.02s] (4 nodes, 0 skipped, 0 errors)
+09:26:54.332598 [info ]:  Succeeded [  0.00s] model main_marts.fct_feature_usage (table)
+09:26:54.332623 [debug]: Finished analyzing [  0.00s] model main_marts.fct_feature_usage [success]
+09:26:54.332629 [info ]: Finished analyzing [  0.02s] (4 nodes, 0 skipped, 0 errors)
+09:26:54.337385 [info ]: Cached model count updated: 11 models (accurate)
+09:26:56.177622 [info ]: Started loading project
+09:26:56.178197 [info ]: Loading profiles.yml
+09:26:56.182649 [info ]: Started parsing
+09:26:56.196928 [info ]: Finished loading project [  0.02s]
+09:26:56.197525 [debug]: Finished parsing models\marts\_marts_models.yml [  0.00s]
+09:26:56.199423 [debug]: Finished parsing models\marts\dim_account.sql [  0.00s]
+09:26:56.200022 [debug]: Finished parsing models\marts\dim_date.sql [  0.00s]
+09:26:56.200745 [debug]: Finished parsing models\marts\dim_plan.sql [  0.00s]
+09:26:56.201377 [debug]: Finished parsing models\marts\fct_churn.sql [  0.00s]
+09:26:56.202031 [debug]: Finished parsing models\marts\fct_feature_usage.sql [  0.00s]
+09:26:56.207492 [debug]: Finished parsing models\marts\fct_subscriptions.sql [  0.01s]
+09:26:56.208223 [debug]: Finished parsing target\generic_tests\unique_dim_account_account_key.sql [  0.00s]
+09:26:56.208615 [debug]: Finished parsing target\generic_tests\not_null_dim_account_account_key.sql [  0.00s]
+09:26:56.209022 [debug]: Finished parsing target\generic_tests\unique_dim_date_date_key.sql [  0.00s]
+09:26:56.209369 [debug]: Finished parsing target\generic_tests\not_null_dim_date_date_key.sql [  0.00s]
+09:26:56.209661 [debug]: Finished parsing target\generic_tests\unique_dim_plan_plan_key.sql [  0.00s]
+09:26:56.209958 [debug]: Finished parsing target\generic_tests\not_null_dim_plan_plan_key.sql [  0.00s]
+09:26:56.210242 [debug]: Finished parsing target\generic_tests\unique_fct_churn_churn_key.sql [  0.00s]
+09:26:56.210512 [debug]: Finished parsing target\generic_tests\not_null_fct_churn_churn_key.sql [  0.00s]
+09:26:56.210816 [debug]: Finished parsing target\generic_tests\unique_fct_feature_usage_usage_key.sql [  0.00s]
+09:26:56.211128 [debug]: Finished parsing target\generic_tests\not_null_fct_feature_usage_usage_key.sql [  0.00s]
+09:26:56.211418 [debug]: Finished parsing target\generic_tests\unique_fct_subscriptions_subscription_key.sql [  0.00s]
+09:26:56.213961 [debug]: Finished parsing target\generic_tests\not_null_fct_subscriptions_subscription_key.sql [  0.00s]
+09:26:56.214354 [info ]: Finished parsing [  0.03s]
+09:26:56.215727 [info ]: Cached model count updated: 11 models (estimate)
+09:26:56.215739 [info ]: Cached model count updated: 11 models (accurate)
+09:26:56.215774 [info ]: Started scheduling
+09:26:56.215858 [info ]: Finished scheduling [  0.00s]
+09:26:56.215868 [debug]: Incremental compilation - 1 nodes selected: {"model.dbt_ravenstack.dim_date"}
+09:26:56.216159 [info ]: Started deferring state
+09:26:56.216169 [info ]: Finished deferring state [  0.00s]
+09:26:56.216392 [info ]: Started downloading schemas
+09:26:56.216410 [debug]:    Started downloading relations
+09:26:56.216423 [debug]:   Finished [  0.00s] downloading relations
+09:26:56.216434 [info ]: Finished downloading schemas [  0.00s]
+09:26:56.345176 [info ]: Started building task graph
+09:26:56.345232 [info ]: Finished building task graph [  0.00s]
+09:26:56.345371 [info ]: Started rendering (1 nodes)
+09:26:56.345390 [info ]: Started model main_marts.dim_date
+09:26:56.345401 [debug]: Started rendering model main_marts.dim_date
+09:26:56.348251 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_date at target\.lsp\compiled\models\marts\dim_date.sql
+09:26:56.348310 [info ]: Started analyzing (1 nodes)
+09:26:56.348321 [debug]: Started analyzing model main_marts.dim_date
+09:26:56.348329 [debug]: Finished rendering [  0.00s] model main_marts.dim_date [success]
+09:26:56.348340 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+09:26:56.359061 [error]: dbt0251: Recursive CTEs must have column aliases
+  --> models\marts\dim_date.sql:4:16
+09:26:56.359153 [info ]:     Failed [  0.01s] model main_marts.dim_date (table)
+09:26:56.359173 [debug]: Finished analyzing [  0.01s] model main_marts.dim_date [error]
+09:26:56.359179 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 1 errors)
+09:26:56.364310 [info ]: Cached model count updated: 11 models (accurate)
+==================== 2026-03-14T09:32:51.419200Z | a7f3360b-9f36-4382-afc4-198bd1a4bb39 ====================
+09:32:51.419262 [info ]: Starting dbt LSP server
+09:32:51.419290 [info ]: Connecting to LSP client on port 8000
+09:32:51.420460 [info ]: Successfully connected to LSP client
+09:32:51.420472 [info ]: Creating LSP service...
+09:32:51.460214 [info ]: Creating LSP server...
+09:32:51.460234 [info ]: Starting LSP server...
+09:32:51.514460 [info ]: Started loading project
+09:32:51.518164 [info ]: Loading profiles.yml
+09:32:51.522757 [info ]: Loading packages.yml
+09:32:51.522875 [debug]:    Started loading packages
+09:32:51.528995 [debug]:     Loaded [  0.01s] packages
+09:32:51.529743 [info ]: Started parsing
+09:32:51.553062 [info ]: Finished loading project [  0.04s]
+09:32:51.558409 [debug]: Finished parsing models\marts\_marts_models.yml [  0.00s]
+09:32:51.563652 [debug]: Finished parsing models\marts\dim_account.sql [  0.00s]
+09:32:51.564241 [debug]: Finished parsing models\marts\dim_date.sql [  0.00s]
+09:32:51.564827 [debug]: Finished parsing models\marts\dim_plan.sql [  0.00s]
+09:32:51.565367 [debug]: Finished parsing models\marts\fct_churn.sql [  0.00s]
+09:32:51.565899 [debug]: Finished parsing models\marts\fct_feature_usage.sql [  0.00s]
+09:32:51.566325 [debug]: Finished parsing models\marts\fct_subscriptions.sql [  0.00s]
+09:32:51.566655 [debug]: Finished parsing models\staging\stg_accounts.sql [  0.00s]
+09:32:51.566898 [debug]: Finished parsing models\staging\stg_churn_events.sql [  0.00s]
+09:32:51.567152 [debug]: Finished parsing models\staging\stg_feature_usage.sql [  0.00s]
+09:32:51.567406 [debug]: Finished parsing models\staging\stg_subscriptions.sql [  0.00s]
+09:32:51.574733 [debug]: Finished parsing models\staging\stg_support_tickets.sql [  0.01s]
+09:32:51.575830 [debug]: Finished parsing target\generic_tests\unique_dim_account_account_key.sql [  0.00s]
+09:32:51.576413 [debug]: Finished parsing target\generic_tests\not_null_dim_account_account_key.sql [  0.00s]
+09:32:51.576797 [debug]: Finished parsing target\generic_tests\unique_dim_date_date_key.sql [  0.00s]
+09:32:51.577215 [debug]: Finished parsing target\generic_tests\not_null_dim_date_date_key.sql [  0.00s]
+09:32:51.577609 [debug]: Finished parsing target\generic_tests\unique_dim_plan_plan_key.sql [  0.00s]
+09:32:51.577993 [debug]: Finished parsing target\generic_tests\not_null_dim_plan_plan_key.sql [  0.00s]
+09:32:51.578356 [debug]: Finished parsing target\generic_tests\unique_fct_churn_churn_key.sql [  0.00s]
+09:32:51.578726 [debug]: Finished parsing target\generic_tests\not_null_fct_churn_churn_key.sql [  0.00s]
+09:32:51.579072 [debug]: Finished parsing target\generic_tests\unique_fct_feature_usage_usage_key.sql [  0.00s]
+09:32:51.587839 [debug]: Finished parsing target\generic_tests\not_null_fct_feature_usage_usage_key.sql [  0.01s]
+09:32:51.588289 [debug]: Finished parsing target\generic_tests\unique_fct_subscriptions_subscription_key.sql [  0.00s]
+09:32:51.591142 [debug]: Finished parsing target\generic_tests\not_null_fct_subscriptions_subscription_key.sql [  0.00s]
+09:32:51.591554 [info ]: Finished parsing [  0.06s]
+09:32:51.592048 [info ]: Cached model count updated: 11 models (estimate)
+09:32:51.592059 [info ]: Cached model count updated: 11 models (accurate)
+09:32:51.592118 [info ]: Started scheduling
+09:32:51.592299 [info ]: Finished scheduling [  0.00s]
+09:32:51.592323 [info ]: Started scheduling
+09:32:51.592401 [info ]: Finished scheduling [  0.00s]
+09:32:51.592948 [info ]: Started deferring state
+09:32:51.592967 [info ]: Finished deferring state [  0.00s]
+09:32:51.593692 [info ]: Started downloading schemas
+09:32:51.593746 [debug]:    Started downloading relations
+09:32:51.593782 [debug]:   Finished [  0.00s] downloading relations
+09:32:51.593795 [info ]: Finished downloading schemas [  0.00s]
+09:32:51.723330 [info ]: Started building task graph
+09:32:51.723559 [info ]: Finished building task graph [  0.00s]
+09:32:51.723782 [info ]: Started rendering (16 nodes)
+09:32:51.723810 [info ]: Started seed main_raw.ravenstack_feature_usage
+09:32:51.723830 [debug]: Started rendering seed main_raw.ravenstack_feature_usage
+09:32:51.723851 [info ]: Started seed main_raw.ravenstack_subscriptions
+09:32:51.723856 [debug]: Started rendering seed main_raw.ravenstack_subscriptions
+09:32:51.723869 [info ]: Started model main_marts.dim_date
+09:32:51.723875 [debug]: Started rendering model main_marts.dim_date
+09:32:51.723881 [info ]: Started seed main_raw.ravenstack_support_tickets
+09:32:51.723885 [debug]: Started rendering seed main_raw.ravenstack_support_tickets
+09:32:51.723891 [info ]: Started seed main_raw.ravenstack_churn_events
+09:32:51.723894 [debug]: Started rendering seed main_raw.ravenstack_churn_events
+09:32:51.723899 [info ]: Started seed main_raw.ravenstack_accounts
+09:32:51.723902 [debug]: Started rendering seed main_raw.ravenstack_accounts
+09:32:51.727162 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_date at target\.lsp\compiled\models\marts\dim_date.sql
+09:32:51.727295 [info ]: Started analyzing (16 nodes)
+09:32:51.727296 [debug]: Finished rendering [  0.00s] model main_marts.dim_date [success]
+09:32:51.727313 [debug]: Started analyzing model main_marts.dim_date
+09:32:51.732274 [debug]: Finished rendering [  0.01s] seed main_raw.ravenstack_accounts [success]
+09:32:51.732306 [debug]: Started analyzing seed main_raw.ravenstack_accounts
+09:32:51.732358 [info ]:  Succeeded [  0.01s] seed  main_raw.ravenstack_accounts (table)
+09:32:51.732373 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_accounts [success]
+09:32:51.732383 [info ]: Started model main_staging.stg_accounts
+09:32:51.732389 [debug]: Started rendering model main_staging.stg_accounts
+09:32:51.732905 [debug]: Finished rendering [  0.01s] seed main_raw.ravenstack_churn_events [success]
+09:32:51.732940 [debug]: Started analyzing seed main_raw.ravenstack_churn_events
+09:32:51.732970 [info ]:  Succeeded [  0.01s] seed  main_raw.ravenstack_churn_events (table)
+09:32:51.732987 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_churn_events [success]
+09:32:51.733000 [info ]: Started model main_staging.stg_churn_events
+09:32:51.733009 [debug]: Started rendering model main_staging.stg_churn_events
+09:32:51.733086 [debug]: Finished rendering [  0.01s] seed main_raw.ravenstack_support_tickets [success]
+09:32:51.733106 [debug]: Started analyzing seed main_raw.ravenstack_support_tickets
+09:32:51.733124 [info ]:  Succeeded [  0.01s] seed  main_raw.ravenstack_support_tickets (table)
+09:32:51.733133 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_support_tickets [success]
+09:32:51.733142 [info ]: Started model main_staging.stg_support_tickets
+09:32:51.733147 [debug]: Started rendering model main_staging.stg_support_tickets
+09:32:51.734798 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_accounts at target\.lsp\compiled\models\staging\stg_accounts.sql
+09:32:51.734888 [debug]: Finished rendering [  0.00s] model main_staging.stg_accounts [success]
+09:32:51.734925 [debug]: Started analyzing model main_staging.stg_accounts
+09:32:51.735776 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_churn_events at target\.lsp\compiled\models\staging\stg_churn_events.sql
+09:32:51.735868 [debug]: Started analyzing model main_staging.stg_churn_events
+09:32:51.736057 [debug]: Finished rendering [  0.00s] model main_staging.stg_churn_events [success]
+09:32:51.736405 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_support_tickets at target\.lsp\compiled\models\staging\stg_support_tickets.sql
+09:32:51.736604 [debug]: Started analyzing model main_staging.stg_support_tickets
+09:32:51.736721 [debug]: Finished rendering [  0.00s] model main_staging.stg_support_tickets [success]
+09:32:51.749322 [debug]: Finished rendering [  0.03s] seed main_raw.ravenstack_subscriptions [success]
+09:32:51.749375 [debug]: Started analyzing seed main_raw.ravenstack_subscriptions
+09:32:51.749415 [info ]:  Succeeded [  0.03s] seed  main_raw.ravenstack_subscriptions (table)
+09:32:51.749441 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_subscriptions [success]
+09:32:51.749457 [info ]: Started model main_staging.stg_subscriptions
+09:32:51.749468 [debug]: Started rendering model main_staging.stg_subscriptions
+09:32:51.751456 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_subscriptions at target\.lsp\compiled\models\staging\stg_subscriptions.sql
+09:32:51.751528 [debug]: Started analyzing model main_staging.stg_subscriptions
+09:32:51.751551 [debug]: Finished rendering [  0.00s] model main_staging.stg_subscriptions [success]
+09:32:51.756818 [info ]:  Succeeded [  0.02s] model main_staging.stg_support_tickets (view)
+09:32:51.756862 [debug]: Finished analyzing [  0.02s] model main_staging.stg_support_tickets [success]
+09:32:51.756890 [info ]:  Succeeded [  0.02s] model main_staging.stg_churn_events (view)
+09:32:51.756904 [debug]: Finished analyzing [  0.02s] model main_staging.stg_churn_events [success]
+09:32:51.756917 [info ]:  Succeeded [  0.01s] model main_staging.stg_subscriptions (view)
+09:32:51.756928 [debug]: Finished analyzing [  0.01s] model main_staging.stg_subscriptions [success]
+09:32:51.756953 [info ]: Started model main_marts.dim_plan
+09:32:51.756968 [debug]: Started rendering model main_marts.dim_plan
+09:32:51.757001 [info ]:  Succeeded [  0.02s] model main_staging.stg_accounts (view)
+09:32:51.757013 [debug]: Finished analyzing [  0.02s] model main_staging.stg_accounts [success]
+09:32:51.757028 [info ]: Started model main_marts.dim_account
+09:32:51.757038 [debug]: Started rendering model main_marts.dim_account
+09:32:51.759859 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_account at target\.lsp\compiled\models\marts\dim_account.sql
+09:32:51.759933 [debug]: Started analyzing model main_marts.dim_account
+09:32:51.759943 [debug]: Finished rendering [  0.00s] model main_marts.dim_account [success]
+09:32:51.760398 [debug]: Compiled SQL for node model.dbt_ravenstack.dim_plan at target\.lsp\compiled\models\marts\dim_plan.sql
+09:32:51.760456 [debug]: Started analyzing model main_marts.dim_plan
+09:32:51.760547 [debug]: Finished rendering [  0.00s] model main_marts.dim_plan [success]
+09:32:51.777424 [error]: dbt0251: Recursive CTEs must have column aliases
+  --> models\marts\dim_date.sql:4:16
+09:32:51.777521 [info ]:     Failed [  0.05s] model main_marts.dim_date (table)
+09:32:51.777543 [debug]: Finished analyzing [  0.05s] model main_marts.dim_date [error]
+09:32:51.783489 [info ]:  Succeeded [  0.03s] model main_marts.dim_plan (table)
+09:32:51.783519 [debug]: Finished analyzing [  0.02s] model main_marts.dim_plan [success]
+09:32:51.794369 [info ]:  Succeeded [  0.04s] model main_marts.dim_account (table)
+09:32:51.794400 [debug]: Finished analyzing [  0.03s] model main_marts.dim_account [success]
+09:32:51.794425 [info ]: Started model main_marts.fct_subscriptions
+09:32:51.794434 [debug]: Started rendering model main_marts.fct_subscriptions
+09:32:51.794454 [info ]: Started model main_marts.fct_churn
+09:32:51.794461 [debug]: Started rendering model main_marts.fct_churn
+09:32:51.796949 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_churn at target\.lsp\compiled\models\marts\fct_churn.sql
+09:32:51.797071 [debug]: Finished rendering [  0.00s] model main_marts.fct_churn [success]
+09:32:51.797153 [debug]: Started analyzing model main_marts.fct_churn
+09:32:51.797422 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_subscriptions at target\.lsp\compiled\models\marts\fct_subscriptions.sql
+09:32:51.797487 [debug]: Started analyzing model main_marts.fct_subscriptions
+09:32:51.797591 [debug]: Finished rendering [  0.00s] model main_marts.fct_subscriptions [success]
+09:32:51.802204 [debug]: Finished rendering [  0.08s] seed main_raw.ravenstack_feature_usage [success]
+09:32:51.802247 [debug]: Started analyzing seed main_raw.ravenstack_feature_usage
+09:32:51.802281 [info ]:  Succeeded [  0.08s] seed  main_raw.ravenstack_feature_usage (table)
+09:32:51.802296 [debug]: Finished analyzing [  0.00s] seed main_raw.ravenstack_feature_usage [success]
+09:32:51.802314 [info ]: Started model main_staging.stg_feature_usage
+09:32:51.802322 [debug]: Started rendering model main_staging.stg_feature_usage
+09:32:51.803522 [debug]: Compiled SQL for node model.dbt_ravenstack.stg_feature_usage at target\.lsp\compiled\models\staging\stg_feature_usage.sql
+09:32:51.803602 [debug]: Finished rendering [  0.00s] model main_staging.stg_feature_usage [success]
+09:32:51.803624 [debug]: Started analyzing model main_staging.stg_feature_usage
+09:32:51.806037 [info ]:  Succeeded [  0.00s] model main_staging.stg_feature_usage (view)
+09:32:51.806065 [debug]: Finished analyzing [  0.00s] model main_staging.stg_feature_usage [success]
+09:32:51.807410 [info ]:  Succeeded [  0.01s] model main_marts.fct_churn (table)
+09:32:51.807435 [debug]: Finished analyzing [  0.01s] model main_marts.fct_churn [success]
+09:32:51.826881 [info ]:  Succeeded [  0.03s] model main_marts.fct_subscriptions (table)
+09:32:51.826910 [debug]: Finished analyzing [  0.03s] model main_marts.fct_subscriptions [success]
+09:32:51.826932 [info ]: Started model main_marts.fct_feature_usage
+09:32:51.826941 [debug]: Started rendering model main_marts.fct_feature_usage
+09:32:51.828984 [debug]: Compiled SQL for node model.dbt_ravenstack.fct_feature_usage at target\.lsp\compiled\models\marts\fct_feature_usage.sql
+09:32:51.829038 [debug]: Started analyzing model main_marts.fct_feature_usage
+09:32:51.829036 [debug]: Finished rendering [  0.00s] model main_marts.fct_feature_usage [success]
+09:32:51.829049 [info ]: Finished rendering [  0.11s] (16 nodes, 0 skipped, 0 errors)
+09:32:51.836225 [info ]:  Succeeded [  0.01s] model main_marts.fct_feature_usage (table)
+09:32:51.836257 [debug]: Finished analyzing [  0.01s] model main_marts.fct_feature_usage [success]
+09:32:51.836264 [info ]: Finished analyzing [  0.11s] (16 nodes, 0 skipped, 1 errors)
+09:32:51.839793 [info ]: Cached model count updated: 11 models (accurate)
+09:32:51.906432 [info ]: Loading profiles.yml
