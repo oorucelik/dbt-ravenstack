@@ -6,3 +6,4 @@ logs/
 
 # dbt cache
 .dbt/*
+dbt_internal_packages/
