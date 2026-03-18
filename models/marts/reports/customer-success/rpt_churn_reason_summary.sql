@@ -17,8 +17,8 @@ select
 from churn c
 left join accounts a
     on c.account_id = a.account_id
-GROUP BY 
+group by 
     churn_reason
-ORDER BY
-    churn_event_count DESC
+order by
+    churn_event_count desc
 
